@@ -1,0 +1,129 @@
+PythonI/Ohints02youtube
+D:\1aabIMP\1aaaaTechTraining2023\1aabTechTraining\1aaabHints\1adPythinHints01
+12:37 PM 3/17/2024
+
+"https://www.youtube.com/watch?v=evcUugVyauY12:29 PM 3/17/2024\n")
+===++12:37 PM 3/17/2024 +++==
+input.txt contains
+Chevy,Camarro,Corvette,Spark,Volt
+Ford,Escort,Focus,Mustang
+Toyota,Avalon,Camry,Corolla,Prius,RAVE
+
+inputFile.txt contains
+Chevy,Camarro,Corvette,Spark,Volt
+Ford,Escort,Focus,Mustang
+Toyota,Avalon,Camry,Corolla,Prius,RAVE
+
+.....=.....
+
+#print("https://www.youtube.com/watch?v=evcUugVyauY12:29 PM 3/17/2024\n")
+#outfile = "outputFile.txt"
+'''
+
+end ..........=....
+
+
+..=6:27 PM 3/17/2024...
+cars = []
+with open("inputFile.txt") as f1:
+    for line in f1:
+        print(line[:-1])
+print("\nFirst items in each row")
+with open("inputFile.txt") as f1:
+    for line in f1:
+        row = line.split(",")
+        cars.append (row)
+        print (row[0])
+    print(cars[0][0])
+    print("\nThe whole grid below")
+    print(cars)
+with open("outputFile.txt",'a') as f2:
+    for car in cars:
+        f2.write(car[0]+"\n")
+OUTPUT
+outputFile.txt is changed and contains data below:
+Chevy
+Ford
+Toyota
+
+OUTPUT on console is given below
+Chevy,Camarro,Corvette,Spark,Volt
+Ford,Escort,Focus,Mustang
+Toyota,Avalon,Camry,Corolla,Prius,RAV
+First items in each row
+Chevy
+Ford
+Toyota
+Chevy
+The whole grid below
+[['Chevy', 'Camarro', 'Corvette', 'Spark', 'Volt\n'], ['Ford', 'E
+scort', 'Focus', 'Mustang\n'], ['Toyota', 'Avalon', 'Camry', 'Cor
+olla', 'Prius', 'RAVE']]
+>>> 
+
+...=end 6:27 PM 3/17/2024...
+
+
+..=1:16 PM 3/17/2024===
+outfile = "outputFile.txt"
+with open("inputFile.txt") as f1:
+    for line in f1:
+        print(line[:-1])
+OUTPUT
+Chevy,Camarro,Corvette,Spark,Volt
+Ford,Escort,Focus,Mustang
+Toyota,Avalon,Camry,Corolla,Prius,RAV
+..=end of 1:16 PM 3/17/2024...
+
+
+
+..=1:02 PM 3/17/2024........
+print("https://www.youtube.com/watch?v=evcUugVyauY12:29 PM 3/17/2024\n")
+print("Python I/O file manipulation\n")
+infile = "inputFile.txt"
+outfile = "outputFile.txt"
+with open(infile) as f1:
+    for line in f1:
+        print(line)
+print("\n**************")
+with open(infile) as f1:
+    for line in f1:
+        print(line[:-1])
+
+OUTPUT
+
+Python I/O file manipulation
+Chevy,Camarro,Corvette,Spark,Volt
+Ford,Escort,Focus,Mustang
+Toyota,Avalon,Camry,Corolla,Prius,RAVE
+**************
+Chevy,Camarro,Corvette,Spark,Volt
+Ford,Escort,Focus,Mustang
+Toyota,Avalon,Camry,Corolla,Prius,RAV
+>>> 
+..=end of 1:02 PM 3/17/2024...........
+
+..=12:58 PM 3/17/2024....
+print("https://www.youtube.com/watch?v=evcUugVyauY12:29 PM 3/17/2024\n")
+print("Python I/O file manipulatiom")
+infile = "input.txt"
+outfile = "output.txt"
+for line in infile:
+    print(line)
+
+OUTPUT
+https://www.youtube.com/watch?v=evcUugVyauY12:29 PM 3/17/2024
+Python I/O file manipulatiom
+i
+n
+p
+u
+t
+.
+t
+x
+t
+>>> 
+..=end of 12:58 PM 3/17/2024....
+
+===++ end of 12:37 PM 3/17/2024 +===

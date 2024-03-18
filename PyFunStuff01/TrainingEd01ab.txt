@@ -1,0 +1,221 @@
+TrainingEd01ab
+C:\Users\User\Pictures\MyFamilyFInanJob\1aa02JobTraining\1a03TechTraining\1aaaashTechTraining2024\02edKid\edKid2024
+
+
+D:USB20FDnavyBlueYarn\TechKidTraining\1a23TechTrainng\1aaashTechTraining2024\02edKid\edKid2024
+
+1:48 AM 3/14/2024
+
+email is jwgibbo@ku.edu / jwgibbo@gmail.com
+I think Homework upload to siddiquiAltif10@ku.edu
+
+==++= 1:48 AM 3/14/2024++===
+
+
+
+https://wiki.ittc.ku.edu/ittc_wiki/index.php?title=EECS168:Lab6
+
+Jump to: content
+Page
+Discussion
+Search ITTC
+more 
+EECS168:Lab6
+Jump to:navigationJump to:search
+Navigation
+Home
+Information
+Syllabus
+Lecture Archive
+Classwork
+Labs
+
+Contents
+1	Due Time
+2	Github Classrooms
+3	Lab conduct
+4	Topics
+5	Functions
+5.1	When to return a value?
+6	One Big Exercise: Number Manipulation
+6.1	Type Requirement
+6.2	Required Functions
+7	EECS 169 Exercise: Prime detector
+8	Rubric
+Due Time
+This lab is due 21 days from the start of your lab (the first lab you have after returning from spring break).
+
+Github Classrooms
+Section	Submission Link
+Tu 09:00 - 10:50 AM	Link
+Tu 11:00 - 12:50 PM	Link
+Tu 02:30 - 04:20 PM	Link
+W 11:00 - 12:50 PM	Link
+W 03:00 - 04:50 PM	Link
+Th 09:00 - 10:50 AM	[ https://classroom.github.com/a/XV00U1F7]
+Th 02:30 - 04:20 PM	[ https://classroom.github.com/a/uGQPu9TM]
+F 10:00 - 11:50 AM	Link
+Lab conduct
+Do not use any unauthorized aid, such sites like rentacoder, chegg, chatGPT, or course hero to obtain answers
+Do not use code provided by another student
+Do not reuse code (by you or anyone) from prior semesters
+If you need help, seek it from:
+Your lab TA.
+Me, Dr. Gibbons, my email is jwgibbo@ku.edu / jwgibbo@gmail.com
+If equipment you don't own (e.g. cycle servers) needs attention or you're having account issues put in a ticket!
+Topics
+Functions
+Functions
+Functions are used to "bottle up," so to speak, some piece of functionality or a specific algorithm so that we can run it whenever we like and with whatever parameters we choose. There are two parts to getting a function up and running. Step 1 is to define the function:
+
+function_name(parameters):
+    function_body
+    return expression #optional
+Notes about functions:
+
+You can use all the tools you know (e.g. if statements, loops, etc) in your function body.
+Returning a value is optional, for example you might want a function to be in charge of printing a menu
+A best practice is to include a "doc string" which provides a brief description of what the function does
+It's the first line of the (can be multiple lines if needed) of the function body
+The doc string should be a descriptions surrounded by triple double quotes (see example below)
+There's no blank line either before or after the docstring.
+The docstring is a phrase ending in a period. It prescribes the function or method's effect as a command ("Do this", "Return that"), not as a description; e.g. don't write "Returns the pathname ...".
+The one-line docstring should NOT be a "signature" reiterating the function/method parameters (which can be obtained by introspection). Don't do: """plus_one(num) --> int"""
+More on doc strings
+Here's an example of a function that takes a number and returns that number plus one:
+
+plus_one(num): 
+   """Return the number plus one."""
+   ans = num + 1 #this is a locally declared variable
+   return ans  
+You can do everything you already know how to do in your functions. Loops, if statements, complicated math - whatever you want.
+
+If you want to use a function you defined, you to call it. Moving forward, we will have an "entry point" to our programs be a function called main which will be the only function called from the global scope, meaning it's the only function not called from another function.
+
+Example:
+
+plus_one(num): 
+   """Return the number plus one."""
+   ans = num + 1 #this is a locally declared variable
+   return ans 
+
+main():
+   """Be launching point of program."""
+   print(plus_one(5)) #prints 6
+
+main() # The only call made from global scope
+       # We'll learn more about main as the semester progresses 
+
+When to return a value?
+To decide if you need a void or non-void (e.g. a function that returns a value) you must determine if your function is returning a value or not. Decide whether these functions should have a return type or simply do work:
+
+A function to find the cube of any int
+A function that prints "Hello" 1000 times
+A function that takes a string and a number and prints it to the screen that number of times
+A function that calculates the nth fibonacci number
+A function that takes a string called phrase and determines if the phrase has the same words forwards and backwards
+One Big Exercise: Number Manipulation
+In this lab you'll make a single large program that uses several function definitions. Your main will be in charge of using the other functions you define.
+
+What your program will do is present the user with the following menu:
+
+1) Count digits
+2) Sum digits
+3) Is Palindrome
+4) Reverse 
+5) Exit
+Choice: 
+Option	Behavior
+Count digits	Prompt the user for a positive int and count how many digits are in that number
+Sum digits	Prompt the user for a positive int and sum up all the digits in that number
+Is Palindrome	Prompt the user for a positive int tell whether or not their number is a palindrome
+Reverse	Prompt the user for a positive int and print the reverse of the number
+Exit	Exit the program
+For all choices, you may assume good input.
+
+Type Requirement
+You must store the user's input as an int for the duration of the program.
+You cannot use string methods to manipulate the digits.
+You will not be responsible for number with leading or trailing zeroes, but zeroes can be in the middle (e.g. 12021)
+Required Functions
+You will write several functions that you will use in combination to complete this lab:
+
+last_digit(num)
+returns the last digit in n
+example last_digit(123) returns 3
+remove_last_digit(num)
+returns the number n with the last digit trimmed off
+example remove_last_digit(123) returns 12
+when remove_last_digit is passed a 1-digit number, return 0
+add_digit(current_num, new_digit)
+returns the current_num with new_digit placed into the ones space
+example add_digit(123, 4) returns 1234
+reverse(num)
+returns the reverse of num
+example reverse(1234) returns 4321
+this function should call other functions you've defined
+is_palindrome(num)
+returns true if num is a palindrome
+example is_palindrome(12321) returns True, but is_palindrome(123) returns False
+This should use reverse
+count_digits(num)
+returns the count of digits in num
+example count_digits(123) returns 3
+this function could be helped by remove_last_digit
+sum_digits(num)
+returns the sum of digits in num
+example count_digits(123) returns 6
+this function should use last_digit and remove_last_digit
+print_menu()
+prints the menu
+This does NOT obtain user input, it only prints the menu
+main
+Until the user wants to quit, this main will print the menu, obtain the user's choice, and call the appropriate functions to print the desired results
+EECS 169 Exercise: Prime detector
+You must add one additional menu item (before exit when printing) to detect if the number given by the user is prime or not. You must define and use a function called...
+
+is_prime(num)
+Determines if num is prime or not
+NOTE:
+
+there are not points for efficiency for this one. In other words, I don't mean for this exercise to turn into a week long math research project. (But if you got nothing else going on, feel free :) )
+Rubric
+[10pts] Attendance
+[5pts] Formatting and Documentation
+168
+
+[5pts] last_digit(num)
+[5pts] remove_last_digit(num)
+[10pts] add_digit(current_num, new_digit)
+[10pts] reverse(num)
+[10pts] is_palindrome(num)
+[15pts] count_digits(num)
+[15pts] sum_digits(num)
+[5pts] print_menu()
+[10pts] main()
+169
+
+[5pts] last_digit(num)
+[5pts] remove_last_digit(num)
+[10pts] add_digit(current_num, new_digit)
+[5pts] reverse(num)
+[10pts] is_palindrome(num)
+[10pts] count_digits(num)
+[10pts] sum_digits(num)
+[5pts] print_menu()
+[15pts] is_prime(num)
+[10pts] main()
+This page was last edited on 1 March 2024, at 10:49.
+Privacy policy
+About ITTC
+Disclaimers
+© 2024 University of Kansas
+
+===++end of 1:48 AM 3/14/2024 ++==
+
+
+
+==++ 11:59 AM 3/14/2024 +====
+
+https://www.pythonanywhere.com/user/redbird23/files/home/redbird23/README.txt
+===+= end of 11:59 AM 3/14/2024 +===

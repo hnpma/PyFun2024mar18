@@ -1,0 +1,1033 @@
+cdGITinstall2022feb25Fri
+stored in D:\1HowTO\1aHowTO\git\1aGITinstallAsAdmin
+C:\Users\User\Pictures\MyFamilyFInanJob\1aa02JobTraining\1a03TechTraining\1a02Howto
+==========++++++++++++++++==============
+9:12 PM 2/27/2022
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~
+$ cd
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~
+$ ls
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{1c2b59c6-c5f5-11eb-bacb-000d3a96488e}.TM.blf
+ NTUSER.DAT{1c2b59c6-c5f5-11eb-bacb-000d3a96488e}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{1c2b59c6-c5f5-11eb-bacb-000d3a96488e}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~
+$ cd Documents
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ ls
+ 2016TEAMcse330SSHkeyForEC2Instance.txt   communication13studio/
+ Git-Exercises/                           desktop.ini
+ LC101-studio-13/                         imp/
+'My Music'@                               lecture14-my-zoo/
+'My Pictures'@                            studio13communication-log/
+'My Videos'@                              tech/
+ Portfolio/                               techCloned/
+ communication-log-ROLE/
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ cd s^C
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ cd studio13communication-log
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/studio13communication-log (main)
+$ ls
+index.html
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/studio13communication-log (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/studio13communication-log (main)
+$ git branch
+* main
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/studio13communication-log (main)
+$ git push -u origin main
+remote: Permission to Hannah2022M/studio13communication-log.git denied to Hannah2020M.
+fatal: unable to access 'https://github.com/Hannah2022M/studio13communication-log.git/': The requested URL returned error: 403
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/studio13communication-log (main)
+$ git remote add origin https://github.com/Hannah2022M/studio13communication-log.git
+error: remote origin already exists.
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/studio13communication-log (main)
+$ git branch
+* main
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/studio13communication-log (main)
+$ cd ..
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ ls
+ 2016TEAMcse330SSHkeyForEC2Instance.txt   communication13studio/
+ Git-Exercises/                           desktop.ini
+ LC101-studio-13/                         imp/
+'My Music'@                               lecture14-my-zoo/
+'My Pictures'@                            studio13communication-log/
+'My Videos'@                              tech/
+ Portfolio/                               techCloned/
+ communication-log-ROLE/
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ cd studio13communication-log
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/studio13communication-log (main)
+$ ls
+index.html
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/studio13communication-log (main)
+$ git rm -r index.html
+rm 'index.html'
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/studio13communication-log (main)
+$ ls
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/studio13communication-log (main)
+$ cd ..
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ ls
+ 2016TEAMcse330SSHkeyForEC2Instance.txt   communication13studio/
+ Git-Exercises/                           desktop.ini
+ LC101-studio-13/                         imp/
+'My Music'@                               lecture14-my-zoo/
+'My Pictures'@                            studio13communication-log/
+'My Videos'@                              tech/
+ Portfolio/                               techCloned/
+ communication-log-ROLE/
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ git rm -r studio13communication-log
+fatal: pathspec 'studio13communication-log' did not match any files
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ git rm -d studio13communication-log
+error: unknown switch `d'
+usage: git rm [<options>] [--] <file>...
+
+    -n, --dry-run         dry run
+    -q, --quiet           do not list removed files
+    --cached              only remove from the index
+    -f, --force           override the up-to-date check
+    -r                    allow recursive removal
+    --ignore-unmatch      exit with a zero status even if nothing matched
+    --sparse              allow updating entries outside of the sparse-checkout cone
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ ls
+ 2016TEAMcse330SSHkeyForEC2Instance.txt   communication13studio/
+ Git-Exercises/                           desktop.ini
+ LC101-studio-13/                         imp/
+'My Music'@                               lecture14-my-zoo/
+'My Pictures'@                            studio13communication-log/
+'My Videos'@                              tech/
+ Portfolio/                               techCloned/
+ communication-log-ROLE/
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ git rm -d studio13communication-log
+error: unknown switch `d'
+usage: git rm [<options>] [--] <file>...
+
+    -n, --dry-run         dry run
+    -q, --quiet           do not list removed files
+    --cached              only remove from the index
+    -f, --force           override the up-to-date check
+    -r                    allow recursive removal
+    --ignore-unmatch      exit with a zero status even if nothing matched
+    --sparse              allow updating entries outside of the sparse-checkout cone
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ git rm -r studio13communication-log
+fatal: pathspec 'studio13communication-log' did not match any files
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ git rm -f studio13communication-log
+fatal: pathspec 'studio13communication-log' did not match any files
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ git rm -r studio13communication-log
+fatal: pathspec 'studio13communication-log' did not match any files
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ ls
+ 2016TEAMcse330SSHkeyForEC2Instance.txt   communication13studio/
+ Git-Exercises/                           desktop.ini
+ LC101-studio-13/                         imp/
+'My Music'@                               lecture14-my-zoo/
+'My Pictures'@                            studio13communication-log/
+'My Videos'@                              tech/
+ Portfolio/                               techCloned/
+ communication-log-ROLE/
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ git rm -r studio13communication-log
+fatal: pathspec 'studio13communication-log' did not match any files
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ ls
+ 2016TEAMcse330SSHkeyForEC2Instance.txt   communication-log-ROLE/
+ Git-Exercises/                           communication13studio/
+ LC101-studio-13/                         desktop.ini
+'My Music'@                               imp/
+'My Pictures'@                            lecture14-my-zoo/
+'My Videos'@                              tech/
+ Portfolio/                               techCloned/
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ cd Git-Exercises
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/Git-Exercises (feature)
+$ ls
+exercises.txt
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/Git-Exercises (feature)
+$ git status
+On branch feature
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   exercises.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/Git-Exercises (feature)
+$ git add .
+warning: LF will be replaced by CRLF in exercises.txt.
+The file will have its original line endings in your working directory
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/Git-Exercises (feature)
+$ git commit -m "commit alterations in exercises text file"
+[feature adfac5b] commit alterations in exercises text file
+ 1 file changed, 8 insertions(+)
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/Git-Exercises (feature)
+$ git status
+On branch feature
+nothing to commit, working tree clean
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/Git-Exercises (feature)
+$ git branch
+* feature
+  master
+  test
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/Git-Exercises (feature)
+$ git remote add origin https://github.com/Hannah2022M/Git-Exercises.git
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/Git-Exercises (feature)
+$ git branch -M main
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/Git-Exercises (main)
+$ git push -u origin main
+remote: Permission to Hannah2022M/Git-Exercises.git denied to Hannah2020M.
+fatal: unable to access 'https://github.com/Hannah2022M/Git-Exercises.git/': The requested URL returned error: 403
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/Git-Exercises (main)
+$ git push origin main
+remote: Permission to Hannah2022M/Git-Exercises.git denied to Hannah2020M.
+fatal: unable to access 'https://github.com/Hannah2022M/Git-Exercises.git/': The requested URL returned error: 403
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/Git-Exercises (main)
+$ git push origin main
+remote: Permission to Hannah2022M/Git-Exercises.git denied to Hannah2020M.
+fatal: unable to access 'https://github.com/Hannah2022M/Git-Exercises.git/': The requested URL returned error: 403
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/Git-Exercises (main)
+$ cd ..
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ ls
+ 2016TEAMcse330SSHkeyForEC2Instance.txt   communication-log-ROLE/
+ Git-Exercises/                           communication13studio/
+ LC101-studio-13/                         desktop.ini
+'My Music'@                               imp/
+'My Pictures'@                            lecture14-my-zoo/
+'My Videos'@                              tech/
+ Portfolio/                               techCloned/
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ git clone https://github.com/BlakeRhodes/partytracker.git
+Cloning into 'partytracker'...
+remote: Enumerating objects: 395, done.
+remote: Counting objects: 100% (395/395), done.
+remote: Compressing objects: 100% (264/264), done.
+remote: Total 395 (delta 260), reused 253 (delta 122), pack-reused 0
+Receiving objects: 100% (395/395), 226.34 KiB | 1.13 MiB/s, done.
+Resolving deltas: 100% (260/260), done.
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ ls
+ 2016TEAMcse330SSHkeyForEC2Instance.txt   communication13studio/
+ Git-Exercises/                           desktop.ini
+ LC101-studio-13/                         imp/
+'My Music'@                               lecture14-my-zoo/
+'My Pictures'@                            partytracker/
+'My Videos'@                              tech/
+ Portfolio/                               techCloned/
+ communication-log-ROLE/
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ cd partytracker
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/partytracker (master)
+$ ls
+README.md     karma.conf.js      tsconfig.app.json   tslint.json
+angular.json  package-lock.json  tsconfig.base.json
+deploy.sh*    package.json       tsconfig.json
+e2e/          src/               tsconfig.spec.json
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/partytracker (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/partytracker (master)
+$ git remote add origin https://github.com/Hannah2020M/partytracker.git
+error: remote origin already exists.
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/partytracker (master)
+$ git push remote origin
+fatal: 'remote' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/partytracker (master)
+$ cd ..
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ mkdir myTechDoubts
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ ls
+ 2016TEAMcse330SSHkeyForEC2Instance.txt   communication13studio/
+ Git-Exercises/                           desktop.ini
+ LC101-studio-13/                         imp/
+'My Music'@                               lecture14-my-zoo/
+'My Pictures'@                            myTechDoubts/
+'My Videos'@                              partytracker/
+ Portfolio/                               tech/
+ communication-log-ROLE/                  techCloned/
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ cd myTechDoubts
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/myTechDoubts (master)
+$ git init
+Initialized empty Git repository in C:/Users/h19sl/Documents/myTechDoubts/.git/
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/myTechDoubts (master)
+$ mkdir techTopicDoubts1a
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/myTechDoubts (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/myTechDoubts (master)
+$ ls
+techTopicDoubts1a/
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/myTechDoubts (master)
+$ cd techTopicDoubts1a
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/myTechDoubts/techTopicDoubts1a (master)
+$ ls
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/myTechDoubts/techTopicDoubts1a (master)
+$ git remote add origin https://github.com/Hannah2020M/myTechDoubts.git
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/myTechDoubts/techTopicDoubts1a (master)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/Hannah2020M/myTechDoubts.git'
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/myTechDoubts/techTopicDoubts1a (master)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Hannah2020M/myTechDoubts.git'
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/myTechDoubts/techTopicDoubts1a (master)
+$ git branch
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/myTechDoubts/techTopicDoubts1a (master)
+$ git branch master main
+fatal: not a valid object name: 'main'
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/myTechDoubts/techTopicDoubts1a (master)
+$ git branch -m master main
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/myTechDoubts/techTopicDoubts1a (main)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Hannah2020M/myTechDoubts.git'
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/myTechDoubts/techTopicDoubts1a (main)
+$ git branch -M main
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/myTechDoubts/techTopicDoubts1a (main)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Hannah2020M/myTechDoubts.git'
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/myTechDoubts/techTopicDoubts1a (main)
+$ git ..
+git: '..' is not a git command. See 'git --help'.
+
+The most similar commands are
+        am
+        gc
+        mv
+        p4
+        rm
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/myTechDoubts/techTopicDoubts1a (main)
+$ cd ..
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/myTechDoubts (main)
+$ cd ..
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ ls
+ 2016TEAMcse330SSHkeyForEC2Instance.txt   communication13studio/
+ Git-Exercises/                           desktop.ini
+ LC101-studio-13/                         imp/
+'My Music'@                               lecture14-my-zoo/
+'My Pictures'@                            myTechDoubts/
+'My Videos'@                              partytracker/
+ Portfolio/                               tech/
+ communication-log-ROLE/                  techCloned/
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ git clone https://github.com/STL-LC101-January-22/assignment-4-html-me-something-Hannah2020M.git
+Cloning into 'assignment-4-html-me-something-Hannah2020M'...
+remote: Enumerating objects: 2835, done.
+remote: Counting objects: 100% (2835/2835), done.
+remote: Compressing objects: 100% (2037/2037), done.
+remote: Total 2835 (delta 681), reused 2819 (delta 677), pack-reused 0
+Receiving objects: 100% (2835/2835), 3.24 MiB | 4.57 MiB/s, done.
+Resolving deltas: 100% (681/681), done.
+Updating files: 100% (2636/2636), done.
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ ls
+ 2016TEAMcse330SSHkeyForEC2Instance.txt        communication13studio/
+ Git-Exercises/                                desktop.ini
+ LC101-studio-13/                              imp/
+'My Music'@                                    lecture14-my-zoo/
+'My Pictures'@                                 myTechDoubts/
+'My Videos'@                                   partytracker/
+ Portfolio/                                    tech/
+ assignment-4-html-me-something-Hannah2020M/   techCloned/
+ communication-log-ROLE/
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ cd assignment-4-html-me-something-Hannah2020M
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/assignment-4-html-me-something-Hannah2020M (main)
+$ ls
+grading.js  node_modules/      package.json  styles.css
+index.html  package-lock.json  spec/
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/assignment-4-html-me-something-Hannah2020M (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/assignment-4-html-me-something-Hannah2020M (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/assignment-4-html-me-something-Hannah2020M (main)
+$ git add .
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/assignment-4-html-me-something-Hannah2020M (main)
+$ git commit -m "added text in 7 paras on 2022feb25Fri"
+[main 0456633] added text in 7 paras on 2022feb25Fri
+ 1 file changed, 145 insertions(+), 1 deletion(-)
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/assignment-4-html-me-something-Hannah2020M (main)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/STL-LC101-January-22/assignment-4-html-me-something-Hannah2020M.git'
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/assignment-4-html-me-something-Hannah2020M (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/assignment-4-html-me-something-Hannah2020M (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 3.09 KiB | 3.09 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/STL-LC101-January-22/assignment-4-html-me-something-Hannah2020M.git
+   e7c0d86..0456633  main -> main
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/assignment-4-html-me-something-Hannah2020M (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/assignment-4-html-me-something-Hannah2020M (main)
+$ git add .
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/assignment-4-html-me-something-Hannah2020M (main)
+$ git commit -m "precis index html file"
+[main d7cd795] precis index html file
+ 1 file changed, 68 insertions(+), 152 deletions(-)
+ rewrite index.html (70%)
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/assignment-4-html-me-something-Hannah2020M (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/assignment-4-html-me-something-Hannah2020M (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 548 bytes | 548.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/STL-LC101-January-22/assignment-4-html-me-something-Hannah2020M.git
+   0456633..d7cd795  main -> main
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/assignment-4-html-me-something-Hannah2020M (main)
+$ cd ..
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ cd Git-exercises
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/Git-exercises (main)
+$ ls
+exercises.txt
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/Git-exercises (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/Git-exercises (main)
+$ git branch
+* main
+  master
+  test
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/Git-exercises (main)
+$ git push origin main
+remote: Permission to Hannah2022M/Git-Exercises.git denied to Hannah2020M.
+fatal: unable to access 'https://github.com/Hannah2022M/Git-Exercises.git/': The requested URL returned error: 403
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/Git-exercises (main)
+$ cd ..
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ ls
+ 2016TEAMcse330SSHkeyForEC2Instance.txt        communication13studio/
+ Git-Exercises/                                desktop.ini
+ LC101-studio-13/                              imp/
+'My Music'@                                    lecture14-my-zoo/
+'My Pictures'@                                 myTechDoubts/
+'My Videos'@                                   partytracker/
+ Portfolio/                                    tech/
+ assignment-4-html-me-something-Hannah2020M/   techCloned/
+ communication-log-ROLE/
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ cd assignment-4-html-me-something-Hannah2020M
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/assignment-4-html-me-something-Hannah2020M (main)
+$ ls
+grading.js  node_modules/      package.json  styles.css
+index.html  package-lock.json  spec/
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/assignment-4-html-me-something-Hannah2020M (main)
+$ git staus
+git: 'staus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/assignment-4-html-me-something-Hannah2020M (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/assignment-4-html-me-something-Hannah2020M (main)
+$ git add .
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/assignment-4-html-me-something-Hannah2020M (main)
+$ git commit -m "added In 2019 to p1"
+[main 7e4ddf5] added In 2019 to p1
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/assignment-4-html-me-something-Hannah2020M (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/assignment-4-html-me-something-Hannah2020M (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 305 bytes | 305.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/STL-LC101-January-22/assignment-4-html-me-something-Hannah2020M.git
+   d7cd795..7e4ddf5  main -> main
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/assignment-4-html-me-something-Hannah2020M (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        images/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/assignment-4-html-me-something-Hannah2020M (main)
+$ git add .
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/assignment-4-html-me-something-Hannah2020M (main)
+$ git commit -m "added text,video href links"
+[main 3473aba] added text,video href links
+ 5 files changed, 261 insertions(+), 29 deletions(-)
+ create mode 100644 images/AdoniramJudsonFromUSAtoBurma1863to1902.jpg
+ create mode 100644 images/AmericanDrKentBrantleyIn2014OnTImeMagazineCover.jpg
+ create mode 100644 images/MonasticVOws.jpg
+ create mode 100644 images/SwamiVivekanandaInCossiporeIndiaIn1886.jpg
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/assignment-4-html-me-something-Hannah2020M (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/assignment-4-html-me-something-Hannah2020M (main)
+$ git push origin main
+
+
+
+
+============++++++++================
+2:57 PM 2/25/2022
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~
+$ ls
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{1c2b59c6-c5f5-11eb-bacb-000d3a96488e}.TM.blf
+ NTUSER.DAT{1c2b59c6-c5f5-11eb-bacb-000d3a96488e}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{1c2b59c6-c5f5-11eb-bacb-000d3a96488e}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~
+$exit
+
+3:00 PM 2/25/2022
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~
+$ cd
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~
+$ ls
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{1c2b59c6-c5f5-11eb-bacb-000d3a96488e}.TM.blf
+ NTUSER.DAT{1c2b59c6-c5f5-11eb-bacb-000d3a96488e}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{1c2b59c6-c5f5-11eb-bacb-000d3a96488e}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~
+$ cd Documents
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ ls
+ 2016TEAMcse330SSHkeyForEC2Instance.txt   communication13studio/
+ Git-Exercises/                           desktop.ini
+ LC101-studio-13/                         imp/
+'My Music'@                               lecture14-my-zoo/
+'My Pictures'@                            studio13communication-log/
+'My Videos'@                              tech/
+ Portfolio/                               techCloned/
+ communication-log-ROLE/
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ cd s^C
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ cd studio13communication-log
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/studio13communication-log (main)
+$ ls
+index.html
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/studio13communication-log (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/studio13communication-log (main)
+$ git branch
+* main
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/studio13communication-log (main)
+$ git push -u origin main
+remote: Permission to Hannah2022M/studio13communication-log.git denied to Hannah2020M.
+fatal: unable to access 'https://github.com/Hannah2022M/studio13communication-log.git/': The requested URL returned error: 403
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/studio13communication-log (main)
+$ git remote add origin https://github.com/Hannah2022M/studio13communication-log.git
+error: remote origin already exists.
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/studio13communication-log (main)
+$ git branch
+* main
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/studio13communication-log (main)
+$ cd ..
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ ls
+ 2016TEAMcse330SSHkeyForEC2Instance.txt   communication13studio/
+ Git-Exercises/                           desktop.ini
+ LC101-studio-13/                         imp/
+'My Music'@                               lecture14-my-zoo/
+'My Pictures'@                            studio13communication-log/
+'My Videos'@                              tech/
+ Portfolio/                               techCloned/
+ communication-log-ROLE/
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ cd studio13communication-log
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/studio13communication-log (main)
+$ ls
+index.html
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/studio13communication-log (main)
+$ git rm -r index.html
+rm 'index.html'
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/studio13communication-log (main)
+$ ls
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/studio13communication-log (main)
+$ cd ..
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ ls
+ 2016TEAMcse330SSHkeyForEC2Instance.txt   communication13studio/
+ Git-Exercises/                           desktop.ini
+ LC101-studio-13/                         imp/
+'My Music'@                               lecture14-my-zoo/
+'My Pictures'@                            studio13communication-log/
+'My Videos'@                              tech/
+ Portfolio/                               techCloned/
+ communication-log-ROLE/
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ git rm -r studio13communication-log
+fatal: pathspec 'studio13communication-log' did not match any files
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ git rm -d studio13communication-log
+error: unknown switch `d'
+usage: git rm [<options>] [--] <file>...
+
+    -n, --dry-run         dry run
+    -q, --quiet           do not list removed files
+    --cached              only remove from the index
+    -f, --force           override the up-to-date check
+    -r                    allow recursive removal
+    --ignore-unmatch      exit with a zero status even if nothing matched
+    --sparse              allow updating entries outside of the sparse-checkout cone
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ ls
+ 2016TEAMcse330SSHkeyForEC2Instance.txt   communication13studio/
+ Git-Exercises/                           desktop.ini
+ LC101-studio-13/                         imp/
+'My Music'@                               lecture14-my-zoo/
+'My Pictures'@                            studio13communication-log/
+'My Videos'@                              tech/
+ Portfolio/                               techCloned/
+ communication-log-ROLE/
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ git rm -d studio13communication-log
+error: unknown switch `d'
+usage: git rm [<options>] [--] <file>...
+
+    -n, --dry-run         dry run
+    -q, --quiet           do not list removed files
+    --cached              only remove from the index
+    -f, --force           override the up-to-date check
+    -r                    allow recursive removal
+    --ignore-unmatch      exit with a zero status even if nothing matched
+    --sparse              allow updating entries outside of the sparse-checkout cone
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ git rm -r studio13communication-log
+fatal: pathspec 'studio13communication-log' did not match any files
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ git rm -f studio13communication-log
+fatal: pathspec 'studio13communication-log' did not match any files
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ git rm -r studio13communication-log
+fatal: pathspec 'studio13communication-log' did not match any files
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ ls
+ 2016TEAMcse330SSHkeyForEC2Instance.txt   communication13studio/
+ Git-Exercises/                           desktop.ini
+ LC101-studio-13/                         imp/
+'My Music'@                               lecture14-my-zoo/
+'My Pictures'@                            studio13communication-log/
+'My Videos'@                              tech/
+ Portfolio/                               techCloned/
+ communication-log-ROLE/
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ git rm -r studio13communication-log
+fatal: pathspec 'studio13communication-log' did not match any files
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ ls
+ 2016TEAMcse330SSHkeyForEC2Instance.txt   communication-log-ROLE/
+ Git-Exercises/                           communication13studio/
+ LC101-studio-13/                         desktop.ini
+'My Music'@                               imp/
+'My Pictures'@                            lecture14-my-zoo/
+'My Videos'@                              tech/
+ Portfolio/                               techCloned/
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents (master)
+$ cd Git-Exercises
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/Git-Exercises (feature)
+$ ls
+exercises.txt
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/Git-Exercises (feature)
+$ git status
+On branch feature
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   exercises.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/Git-Exercises (feature)
+$ git add .
+warning: LF will be replaced by CRLF in exercises.txt.
+The file will have its original line endings in your working directory
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/Git-Exercises (feature)
+$ git commit -m "commit alterations in exercises text file"
+[feature adfac5b] commit alterations in exercises text file
+ 1 file changed, 8 insertions(+)
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/Git-Exercises (feature)
+$ git status
+On branch feature
+nothing to commit, working tree clean
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/Git-Exercises (feature)
+$ git branch
+* feature
+  master
+  test
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/Git-Exercises (feature)
+$ git remote add origin https://github.com/Hannah2022M/Git-Exercises.git
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/Git-Exercises (feature)
+$ git branch -M main
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/Git-Exercises (main)
+$ git push -u origin main
+remote: Permission to Hannah2022M/Git-Exercises.git denied to Hannah2020M.
+fatal: unable to access 'https://github.com/Hannah2022M/Git-Exercises.git/': The requested URL returned error: 403
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/Git-Exercises (main)
+$ git push origin main
+remote: Permission to Hannah2022M/Git-Exercises.git denied to Hannah2020M.
+fatal: unable to access 'https://github.com/Hannah2022M/Git-Exercises.git/': The requested URL returned error: 403
+
+
+
+9:13 PM 2/25/2022 After adding h19slcc02864@outlook account
+
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/Git-Exercises (main)
+$ git push origin main
+remote: Permission to Hannah2022M/Git-Exercises.git denied to Hannah2020M.
+fatal: unable to access 'https://github.com/Hannah2022M/Git-Exercises.git/': The requested URL returned error: 403
+
+h19sl@LAPTOP-CG2SCNUS MINGW64 ~/Documents/Git-Exercises (main)
+$
+
+
+
+

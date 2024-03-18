@@ -3,3 +3,219 @@ PyFUnStuff01ab
 
 1:00 PM 3/18/2024
 
+==++1:04 PM 3/18/2024+++==
+
+
+User@LAPTOP-51V5C2DB MINGW64 ~
+$ ls
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+ NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures/
+ PrintHood@
+ PycharmProjects/
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ python3.11
+
+User@LAPTOP-51V5C2DB MINGW64 ~
+$ cd Documents
+
+User@LAPTOP-51V5C2DB MINGW64 ~/Documents (master)
+$ ls
+ 1a02Howto/                'My Music'@        desktop.ini
+ 1aagPython3dot11sep2023/  'My Pictures'@     git09/
+ 1abb01git/                'My Videos'@       javascript-projects/
+ 1abc01Javascript/          Py01mar2024/      myJournalCh07parents/
+ Git/                       PyFun2024mar18/   node-v20.11.0-x64.msi
+ JS2024practice08/          Zoom/
+
+User@LAPTOP-51V5C2DB MINGW64 ~/Documents (master)
+$ cd PyFun2024mar18
+
+User@LAPTOP-51V5C2DB MINGW64 ~/Documents/PyFun2024mar18 (master)
+$ ls
+1a02Howto/  PyFun2024mar18.txt
+
+User@LAPTOP-51V5C2DB MINGW64 ~/Documents/PyFun2024mar18 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        1a02Howto/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+User@LAPTOP-51V5C2DB MINGW64 ~/Documents/PyFun2024mar18 (master)
+$ git add .
+warning: adding embedded git repository: 1a02Howto
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> 1a02Howto
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached 1a02Howto
+hint:
+hint: See "git help submodule" for more information.
+
+User@LAPTOP-51V5C2DB MINGW64 ~/Documents/PyFun2024mar18 (master)
+$ git rm --cached 1a02Howto
+error: the following file has staged content different from both the
+file and the HEAD:
+    1a02Howto
+(use -f to force removal)
+
+User@LAPTOP-51V5C2DB MINGW64 ~/Documents/PyFun2024mar18 (master)
+$ git rm -f --cached 1a02Howto
+rm '1a02Howto'
+
+User@LAPTOP-51V5C2DB MINGW64 ~/Documents/PyFun2024mar18 (master)
+$ ls
+1a02Howto/  PyFun2024mar18.txt
+
+User@LAPTOP-51V5C2DB MINGW64 ~/Documents/PyFun2024mar18 (master)
+$ cd ..
+
+User@LAPTOP-51V5C2DB MINGW64 ~/Documents (master)
+$ cd PyFun2024mar18
+
+User@LAPTOP-51V5C2DB MINGW64 ~/Documents/PyFun2024mar18 (master)
+$ ls
+PyFun2024mar18.txt
+
+User@LAPTOP-51V5C2DB MINGW64 ~/Documents/PyFun2024mar18 (master)
+$ ls
+PyFun2024mar18.txt  PyFunStuff01/
+
+User@LAPTOP-51V5C2DB MINGW64 ~/Documents/PyFun2024mar18 (master)
+$ cd PyFunStuff01
+
+User@LAPTOP-51V5C2DB MINGW64 ~/Documents/PyFun2024mar18/PyFunStuff01 (master)
+$ ls
+
+User@LAPTOP-51V5C2DB MINGW64 ~/Documents/PyFun2024mar18/PyFunStuff01 (master)
+$ git add .
+
+User@LAPTOP-51V5C2DB MINGW64 ~/Documents/PyFun2024mar18/PyFunStuff01 (master)
+$ git commit -m "added empty folder PyFunStuff01"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+User@LAPTOP-51V5C2DB MINGW64 ~/Documents/PyFun2024mar18/PyFunStuff01 (master)
+$ git push origin master
+Everything up-to-date
+
+User@LAPTOP-51V5C2DB MINGW64 ~/Documents/PyFun2024mar18/PyFunStuff01 (master)
+$ cd ..
+
+User@LAPTOP-51V5C2DB MINGW64 ~/Documents/PyFun2024mar18 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+User@LAPTOP-51V5C2DB MINGW64 ~/Documents/PyFun2024mar18 (master)
+$ git add .
+
+User@LAPTOP-51V5C2DB MINGW64 ~/Documents/PyFun2024mar18 (master)
+$ git commit -m "after adding folder PyFunStuff01"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+User@LAPTOP-51V5C2DB MINGW64 ~/Documents/PyFun2024mar18 (master)
+$ git push origin master
+Everything up-to-date
+
+User@LAPTOP-51V5C2DB MINGW64 ~/Documents/PyFun2024mar18 (master)
+$ ls
+PyFun2024mar18.txt  PyFunStuff01/
+
+User@LAPTOP-51V5C2DB MINGW64 ~/Documents/PyFun2024mar18 (master)
+$ git push -u origin master
+Everything up-to-date
+branch 'master' set up to track 'origin/master'.
+
+User@LAPTOP-51V5C2DB MINGW64 ~/Documents/PyFun2024mar18 (master)
+$ ls
+PyFun2024mar18.txt  PyFunStuff01/
+
+User@LAPTOP-51V5C2DB MINGW64 ~/Documents/PyFun2024mar18 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        PyFunStuff01/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+User@LAPTOP-51V5C2DB MINGW64 ~/Documents/PyFun2024mar18 (master)
+$ git add .
+
+User@LAPTOP-51V5C2DB MINGW64 ~/Documents/PyFun2024mar18 (master)
+$ git commit -m "added new text file to folder PyFUnStuff01"
+[master 5f4a1ec] added new text file to folder PyFUnStuff01
+ 1 file changed, 5 insertions(+)
+ create mode 100644 PyFunStuff01/PyFUnStuff01ab.txt
+
+User@LAPTOP-51V5C2DB MINGW64 ~/Documents/PyFun2024mar18 (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+User@LAPTOP-51V5C2DB MINGW64 ~/Documents/PyFun2024mar18 (master)
+$ git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 406 bytes | 406.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/hnpma/PyFun2024mar18.git
+   5d78816..5f4a1ec  master -> master
+
+User@LAPTOP-51V5C2DB MINGW64 ~/Documents/PyFun2024mar18 (master)
+$
+
+
+===++ end of 1:04 PM 3/18/2024 ++===

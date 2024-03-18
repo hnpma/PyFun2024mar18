@@ -1,0 +1,331 @@
+IMPhintsPy01
+C:\Users\User\Pictures\Tech01\1aabTechTraining\1aaabHints\1aaaHintech2023
+\1aagHintechPy2023
+also in
+D:AB2PHT2023\1aaaaIMP\1aabTechTraining2023\1aaaHintech2023\1aagHintechPy2023
+12:24 PM 9/20/2023
+Python prints spaces after the last charater.
+ Python uses indentation to indicate a block of code. 
+%s specifically is used to perform concatenation of strings together. 
+It allows us to format a value inside a string. It is used to 
+incorporate another string within a string. It automatically provides 
+type conversion from value to string.
+
+If we entered Print(10-6) and pressed 
+      enter in the IDLE shell an error would be returned because 
+Python is case-sensitive, and Print should be in all lower-case letters.
+
+==++12:32 AM 9/22/2023++====
+'''
+Line Continuation
+The backslash character \ is the line continuation character used to join
+ a single Python statement spanning over multiple lines.
+'''
+print( 10 + 5 \
++ 15 \
++ 10)
+o/p
+40
+==++endof 12:32 AM 9/22/2023+++====
+a,b= 3,4
+c=a*b
+print(c)
+print("The value of a * b is : " + str(c))
+o/p
+12
+The value of a * b is : 12
+==++12:05 AM 9/22/2023++==
+mystring = "hello"
+myfloat  = 10.0
+myint    = 20
+
+if mystring == "hello":
+    print("String: %s" % mystring)
+if isinstance(myfloat, float) and myfloat == 10.0:
+    print("Float: %f" % myfloat)
+if isinstance(myint, int) and myint == 20:
+    print("Integer: %d" % myint)
+o/p
+String: hello
+Float: 10.000000
+Integer: 20
+
+==+++end of 12:05 AM 9/22/2023++===
+
+==++12:10 AM 9/22/2023+++====
+numbers =[]
+strings = []
+names = ["John", "Moses", "Jessica"]
+numbers.append(1)
+numbers.append(2)
+numbers.append(3)
+
+strings.append( "hello")
+strings.append("world")
+strnumbers = ["1","2","3"]
+
+print('RIP : late ',"Steve",' Jobs')
+second_name = names[1]
+print("numbers : ",numbers)
+for x in numbers:
+     print(x)
+print('   ')
+print("strings: ")
+print(strings)
+print(" ")
+print("strnumbers : ",strnumbers)
+print("  ")
+print("The second name on the names list is %s " % second_name)
+print("The first name on the names list is %s " % "John")
+print("numbers and words are : " + strnumbers[0]+" , "+strnumbers[1]+" , "+strnumbers[2] +", "+ strings[0]+" , "+strings[1])
+print("    next example   ")
+uname=input("Please enter your name : ")
+print("Hello ! ",uname)
+num=input("Please enter a number : ")
+print(type(num))
+print(uname)
+
+o/p
+RIP : late  Steve  Jobs
+numbers :  [1, 2, 3]
+1
+2
+3
+   
+strings: 
+['hello', 'world']
+ 
+strnumbers :  ['1', '2', '3']
+  
+The second name on the names list is Moses 
+The first name on the names list is John 
+numbers and words are : 1 , 2 , 3, hello , world
+    next example   
+Please enter your name : mdm
+Hello !  mdm
+Please enter a number : 3
+<class 'str'>
+mdm
+
+==++endof12:10 AM 9/22/2023++===
+
+ Python uses indentation to indicate a block of code. 
+Indentation Rules
+⦁	Use the colon (:) to start a block and press Enter.
+⦁	All the lines in a block must use the same indentation, either space
+      or a tab.
+⦁	Do not mix space and tab in the same block.
+⦁	A block can have inner blocks with next level indentation.
+The interactive shell tries to evaluate both expressions and statements
+ using REPL (read, evaluate, printing the output, loop).
+Example 1: In IDLE shell
+Python 3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>>7
+   7  
+>>>x=4
+>>>x  #nothing is displayed when we press enter here
+   4
+>>>2+3+5
+>>>10
+>>>a=1+6+9 #nothing is displayed when we press enter here
+>>>a
+   16
+==++12:52 AM 9/22/2023+++=====
+
+Executing Python Scripts in the IDLE Shell
+The running of Python scripts in the IDLE window involves importing the os
+ module. A module is a file containing a set of functions you want to 
+include in your application, The process of importing a Python module 
+enables access to code from the module  
+⦁	Open a new file (File  New File then enter the following statements 
+into the new script.
+import os
+# Change the current working directory
+os.chdir ("C:\PythonScripts")
+# Print the current working directory
+print("The current directory: {0}".format(os.getcwd()))
+os.getcwd()
+⦁	Save the file as ChangeDirectory.py in the PythonScripts folder.
+⦁	Press F5 to run the ChangeDirectory.py script.
+⦁	Close the ChangeDirectory,py 
+The exec() and open() Methods
+The exec() method is used to execute Python scripts. The Python statements are parsed and then executed.
+The exec() Method
+Syntax:
+The syntax goes beyond the scope of this class, but its’ full syntax is:
+exec(object, globals, locals)
+Parameter Values:
+⦁	object: (Required) Either a string, or a code object.
+⦁	globals: (Optional) A dictionary containing global variables.
+⦁	locals: (Optional) A dictionary containing local variables.
+
+==++endof 12:52 AM 9/22/2023+++===
+==+=7:19 PM 9/27/2023+======
+Keys can be displayed in the form of a list,
+but do not act as the items of a list
+d.values()
+      
+dict_values(['Ford', 'Mazda', 'Lexus', 'VW', 'BMW', 'Kia', 'Toyota'])
+myKeys = d.keys()
+      
+myKeys
+      
+dict_keys([1, 2, 3, 4, 5, 6, 7])
+myKeys[2]
+      
+Traceback (most recent call last):
+  File "<pyshell#46>", line 1, in <module>
+    myKeys[2]
+TypeError: 'dict_keys' object is not subscriptable
+myKeys=[1,2,3,4,5]
+      
+myKeys[2]
+      
+3
+myKeys = d.keys()
+      
+myKeys
+      
+dict_keys([1, 2, 3, 4, 5, 6, 7])
+myKeys(dict_keys[2])
+      
+Traceback (most recent call last):
+  File "<pyshell#51>", line 1, in <module>
+    myKeys(dict_keys[2])
+NameError: name 'dict_keys' is not defined
+
+
+
+===++=endo7:20 PM 9/27/2023++===
+
+==++7:24 PM 9/27/2023++====
+To remove an item from a dictionary
+emove a Dictionary Items
+There are several methods to remove items from a dictionary:
+d
+      
+{1: 'Ford', 2: 'Mazda', 3: 'Lexus', 4: 'VW', 5: 'BMW', 6: 'Kia'}
+del d[6]
+      
+d
+      
+{1: 'Ford', 2: 'Mazda', 3: 'Lexus', 4: 'VW', 5: 'BMW'}
+
+
+Using the pop() Method
+The pop() method is a very useful method in removing a dictionary key:value 
+pair from the dictionary. The syntax is:
+dictionary.pop(key, default_value)
+Where
+dictionary is the name of the dictionary.
+key is the key value of the key:value pair to remove.
+value is optional and is the value associated with the key.
+There are three possible outcomes to using the pop() method.
+⦁	If the key exists in the dictionary, the key’s value is returned and the key is removed from the dictionary
+⦁	If the key doesn’t exist and a default value is provided, the default value is returned.
+⦁	If the key doesn’t exist and a default value is not provided, an error is thrown.
+      
+d
+      
+{1: 'Ford', 2: 'Mazda', 3: 'Lexus', 4: 'VW', 5: 'BMW', 6: 'Mazda', 7: 'Toyota'}
+d.pop(6)
+      
+'Mazda'
+d
+      
+{1: 'Ford', 2: 'Mazda', 3: 'Lexus', 4: 'VW', 5: 'BMW', 7: 'Toyota'}
+
+d.popitem()
+      
+(7, 'Toyota')
+d
+      
+{1: 'Ford', 2: 'Mazda', 3: 'Lexus', 4: 'VW', 5: 'BMW'}
+
+===+++endof7:24 PM 9/27/2023+====
+
+
+pythonLab5ForReal01
+D:USB20FDnavyBlueYarn\TechKidTraining\1a23TechTrainng\1aaashTechTraining2024\02edKid\edKid2024\PythonLab5
+6:38 PM 3/17/2024
+
+==++ 9:06 AM 3/18/2024 ++===
+input.txt has
+4 4
+1.0 2.0 3.0 4.0
+5.0 6.0 7.0 8.0
+9.0 10.0 11.0 12.0
+13.0 14.0 15.0 16.0
+
+../10:07 AM 3/18/2024...
+
+
+grid = []
+aver1=0
+n = 0
+input_file = open("input.txt")
+output_file = open("output.txt","w")
+for line in input_file:
+        print("n = "+str(n)+"********")
+        print(line,end=" "+"\n")
+        row = line.split(" ")
+        grid.append(row)
+        n+=1
+r = grid[0][0]
+print("r = "+str(r))
+print("aver1 = "+str(aver1)+":\n")
+print(" ")
+print(" ")
+print(grid[0][0])
+print(grid[1][0])
+
+
+
+console output
+n = 0********
+4 4
+ 
+n = 1********
+1.0 2.0 3.0 4.0
+ 
+n = 2********
+5.0 6.0 7.0 8.0
+ 
+n = 3********
+9.0 10.0 11.0 12.0
+ 
+n = 4********
+13.0 14.0 15.0 16.0 
+r = 4
+aver1 = 0:
+ 
+ 
+4
+1.0
+>>> 
+
+.../end10:07 AM 3/18/2024............
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

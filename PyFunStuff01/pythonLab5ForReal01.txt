@@ -1,0 +1,621 @@
+pythonLab5ForReal01
+D:USB20FDnavyBlueYarn\TechKidTraining\1a23TechTrainng\1aaashTechTraining2024\02edKid\edKid2024\PythonLab5
+6:38 PM 3/17/2024
+
+==++ 9:06 AM 3/18/2024 ++===
+input.txt has
+4 4
+1.0 2.0 3.0 4.0
+5.0 6.0 7.0 8.0
+9.0 10.0 11.0 12.0
+13.0 14.0 15.0 16.0
+
+.../10:43 AM 3/18/2024...
+grid = []
+r = 0
+input_file = open("input.txt")
+output_file = open("output.txt","w")
+for line in input_file:
+        print(line,end=" ")
+        row = line.split(" ")
+        grid.append(row)
+
+print(" ")
+print(" ")
+for r in grid:
+    print(r)
+
+input_file.close()
+output_file.close()
+
+console output
+4 4
+ 1.0 2.0 3.0 4.0
+ 5.0 6.0 7.0 8.0
+ 9.0 10.0 11.0 12.0
+ 13.0 14.0 15.0 16.0  
+ 
+['4', '4\n']
+['1.0', '2.0', '3.0', '4.0\n']
+['5.0', '6.0', '7.0', '8.0\n']
+['9.0', '10.0', '11.0', '12.0\n']
+['13.0', '14.0', '15.0', '16.0']
+>>> 
+
+
+../end 10:43 AM 3/18/2024...
+
+
+../10:42 AM 3/18/2024...
+grid = []
+input_file = open("input.txt")
+output_file = open("output.txt","w")
+for line in input_file:
+        print(line,end=" ")
+        row = line.split(" ")
+        grid.append(row)
+        print(row[0])
+        output_file.write(line)
+
+
+print(" ")
+print(" ")
+print(grid[1][0])
+print(grid[1][1])
+
+input_file.close()
+output_file.close()
+output.txt has changed to
+4 4
+1.0 2.0 3.0 4.0
+5.0 6.0 7.0 8.0
+9.0 10.0 11.0 12.0
+13.0 14.0 15.0 16.0
+
+console output
+
+4 4
+ 4
+1.0 2.0 3.0 4.0
+ 1.0
+5.0 6.0 7.0 8.0
+ 5.0
+9.0 10.0 11.0 12.0
+ 9.0
+13.0 14.0 15.0 16.0 13.0
+ 
+ 
+1.0
+2.0
+>>> 
+
+../end10:42 AM 3/18/2024....
+
+
+../10:38 AM 3/18/2024...
+
+grid = []
+input_file = open("input.txt")
+output_file = open("output.txt","w")
+for line in input_file:
+        print(line,end=" ")
+        row = line.split(" ")
+        grid.append(row)
+        print(row[0])
+        output_file.write(str(row[0])+"\n")
+
+print(" ")
+print(" ")
+print(grid[1][0])
+print(grid[1][1])
+
+input_file.close()
+output_file.close()
+
+output.txt was changed to
+4
+1.0
+5.0
+9.0
+13.0
+console output
+4 4
+ 4
+1.0 2.0 3.0 4.0
+ 1.0
+5.0 6.0 7.0 8.0
+ 5.0
+9.0 10.0 11.0 12.0
+ 9.0
+13.0 14.0 15.0 16.0 13.0
+ 
+ 
+1.0
+2.0
+>>> 
+
+.../end 10:38 AM 3/18/2024...
+
+
+
+../10:25 AM 3/18/2024....
+
+
+grid = []
+aver1=0
+n = 0
+input_file = open("input.txt")
+output_file = open("output.txt","w")
+for line in input_file:
+        print("n = "+str(n)+"********")
+        print(line,end=" "+"\n")
+        row = line.split(" ")
+        grid.append(row)
+        n+=1
+r = grid[0][0]
+print("r = "+str(r))
+print("aver1 = "+str(aver1)+":\n")
+print(" ")
+print(" ")
+print(grid[0][0])
+print(grid[1][0])
+
+
+console putput
+
+n = 0********
+4 4
+ 
+n = 1********
+1.0 2.0 3.0 4.0
+ 
+n = 2********
+5.0 6.0 7.0 8.0
+ 
+n = 3********
+9.0 10.0 11.0 12.0
+ 
+n = 4********
+13.0 14.0 15.0 16.0 
+r = 4
+aver1 = 0:
+ 
+ 
+4
+1.0
+>>> 
+
+
+
+../end 10:25 AM 3/18/2024 ....
+
+
+../10:07 AM 3/18/2024 did NOT work...
+
+
+grid = []
+aver1=0
+n = 0
+input_file = open("input.txt")
+output_file = open("output.txt","w")
+for line in input_file:
+        print("n = "+str(n)+"********")
+        print(line,end=" "+"\n")
+        row = line.split(" ")
+        grid.append(row)
+        if n>0:
+            output_file.write(str(line))
+        n+=1
+r = grid[0][0]
+print("r = "+str(r))
+print("aver1 = "+str(aver1)+":\n")
+print(" ")
+print(" ")
+print(grid[0][0])
+print(grid[1][0])
+
+output.txt was NOT changed
+
+console output
+n = 0********
+4 4
+ 
+n = 1********
+1.0 2.0 3.0 4.0
+ 
+n = 2********
+5.0 6.0 7.0 8.0
+ 
+n = 3********
+9.0 10.0 11.0 12.0
+ 
+n = 4********
+13.0 14.0 15.0 16.0 
+r = 4
+aver1 = 0:
+ 
+ 
+4
+1.0
+>>> 
+
+.../end10:07 AM 3/18/2024............
+
+
+
+./9:35 AM 3/18/2024....
+
+
+grid = []
+aver1=0
+n = 0
+input_file = open("input.txt")
+output_file = open("output.txt","w")
+for line in input_file:
+        print("n = "+str(n)+"********")
+        n+=1
+        print(line,end=" "+"\n")
+        row = line.split(" ")
+        grid.append(row)
+        print("\nrow[0] :- ")
+        print(row[0])
+        print(type(row[0]))
+        print("\n"+"row[1] :- ")
+        print(row[1])
+        aver1 = float(row[0])
+        print("aver1 = "+str(aver1)+" Type of aver1 :\n")
+        print(type(aver1))
+print(" ")
+print(" ")
+print(grid[1][0])
+print(grid[1][1])
+
+
+
+
+consoleoutput 
+
+n = 0********
+4 4
+ 
+row[0] :- 
+4
+<class 'str'>
+row[1] :- 
+4
+aver1 = 4.0 Type of aver1 :
+<class 'float'>
+n = 1********
+1.0 2.0 3.0 4.0
+ 
+row[0] :- 
+1.0
+<class 'str'>
+row[1] :- 
+2.0
+aver1 = 1.0 Type of aver1 :
+<class 'float'>
+n = 2********
+5.0 6.0 7.0 8.0
+ 
+row[0] :- 
+5.0
+<class 'str'>
+row[1] :- 
+6.0
+aver1 = 5.0 Type of aver1 :
+<class 'float'>
+n = 3********
+9.0 10.0 11.0 12.0
+ 
+row[0] :- 
+9.0
+<class 'str'>
+row[1] :- 
+10.0
+aver1 = 9.0 Type of aver1 :
+<class 'float'>
+n = 4********
+13.0 14.0 15.0 16.0 
+row[0] :- 
+13.0
+<class 'str'>
+row[1] :- 
+14.0
+aver1 = 13.0 Type of aver1 :
+<class 'float'>
+ 
+ 
+1.0
+2.0
+>>> 
+
+
+../end 9:35 AM 3/18/2024...
+
+
+../9:26 AM 3/18/2024...
+
+
+grid = []
+aver1=0
+input_file = open("input.txt")
+output_file = open("output.txt","w")
+for line in input_file:
+        print(line,end=" ")
+        row = line.split(" ")
+        grid.append(row)
+        print("row[0] :- ")
+        print(row[0])
+        print(type(row[0]))
+        print(row[1])
+
+print(" ")
+print(" ")
+print(grid[1][0])
+print(grid[1][1])
+
+
+console output
+4 4
+ row[0] :- 
+4
+<class 'str'>
+4
+1.0 2.0 3.0 4.0
+ row[0] :- 
+1.0
+<class 'str'>
+2.0
+5.0 6.0 7.0 8.0
+ row[0] :- 
+5.0
+<class 'str'>
+6.0
+9.0 10.0 11.0 12.0
+ row[0] :- 
+9.0
+<class 'str'>
+10.0
+13.0 14.0 15.0 16.0 row[0] :- 
+13.0
+<class 'str'>
+14.0
+ 
+ 
+1.0
+2.0
+>>> 
+
+../end 9:27 AM 3/18/2024....
+
+../9:24 AM 3/18/2024...
+grid = []
+aver1=0
+input_file = open("input.txt")
+output_file = open("output.txt","w")
+for line in input_file:
+        print(line,end=" ")
+        row = line.split(" ")
+        grid.append(row)
+        print(row[0])
+        print(row[1])
+
+print(" ")
+print(" ")
+print(grid[1][0])
+print(grid[1][1])
+
+conssole output
+4 4
+ 4
+4
+1.0 2.0 3.0 4.0
+ 1.0
+2.0
+5.0 6.0 7.0 8.0
+ 5.0
+6.0
+9.0 10.0 11.0 12.0
+ 9.0
+10.0
+13.0 14.0 15.0 16.0 13.0
+14.0
+ 
+ 
+1.0
+2.0
+>>> 
+
+
+
+
+./end9:24 AM 3/18/2024...
+
+../9:19 AM 3/18/2024...
+
+grid = []
+input_file = open("input.txt")
+output_file = open("output.txt","w")
+for line in input_file:
+        print(line,end=" ")
+        row = line.split(" ")
+        grid.append(row)
+        print(row[1])
+print(" ")
+print(" ")
+print(grid[1][0])
+print(grid[1][1])
+
+console output
+ 4
+1.0 2.0 3.0 4.0
+ 2.0
+5.0 6.0 7.0 8.0
+ 6.0
+9.0 10.0 11.0 12.0
+ 10.0
+13.0 14.0 15.0 16.0 14.0
+ 
+ 
+1.0
+2.0
+>>> 
+
+.../end 9:19 AM 3/18/2024....
+
+
+../9:18 AM 3/18/2024....
+
+grid = []
+input_file = open("input.txt")
+output_file = open("output.txt","w")
+for line in input_file:
+        print(line,end=" ")
+        row = line.split(" ")
+        grid.append(row)
+        print(row[0])
+print(" ")
+print(" ")
+print(grid[1][0])
+print(grid[1][1])
+
+
+console output
+4 4
+ 4
+1.0 2.0 3.0 4.0
+ 1.0
+5.0 6.0 7.0 8.0
+ 5.0
+9.0 10.0 11.0 12.0
+ 9.0
+13.0 14.0 15.0 16.0 13.0
+ 
+ 
+1.0
+2.0
+>>> 
+
+.../end 9:18 AM 3/18/2024......
+
+...=9:13 AM 3/18/2024....
+grid = []
+input_file = open("input.txt")
+output_file = open("output.txt","w")
+for line in input_file:
+        print(line,end=" ")
+        row = line.split(" ")
+        grid.append(row)
+        print(row[0])
+print(" ")
+print(" ")
+print(grid[1][0])
+print(grid[1][1])
+for line in input_file:
+    for n in grid:
+        output_file.write(n[0]+"\n")
+input_file.close()
+output_file.close()
+
+OUTPUT in output.txt
+
+
+console OUTPUT
+4 4
+ 4
+1.0 2.0 3.0 4.0
+ 1.0
+5.0 6.0 7.0 8.0
+ 5.0
+9.0 10.0 11.0 12.0
+ 9.0
+13.0 14.0 15.0 16.0 13.0
+ 
+ 
+1.0
+2.0
+
+>>>
+
+
+...=end 9:13 AM 3/18/2024....
+
+
+===++ end of 9:06 AM 3/18/2024+++===
+
+
+==++= 6:38 PM 3/17/2024 +++=========
+
+..=10:11 PM 3/17/2024....
+inputFile.txt has
+4 4
+1.0 2.0 3.0 4.0
+5.0 6.0 7.0 8.0
+9.0 10.0 11.0 12.0
+13.0 14.0 15.0 16.0
+
+grid = []
+input_file = open("inputFile.txt")
+output_file = open("outputFile.txt","w")
+for line in input_file:
+        print(line,end=" ")
+        grid.append(line)
+        output_file.write(str(line))
+print(" ")
+print("grid below")
+print(grid[0])
+#string = item
+input_file.close()
+output_file.close()
+
+
+outputFile.txt is changed to:
+4 4
+1.0 2.0 3.0 4.0
+5.0 6.0 7.0 8.0
+9.0 10.0 11.0 12.0
+13.0 14.0 15.0 16.0
+
+console output
+4 4
+ 1.0 2.0 3.0 4.0
+ 5.0 6.0 7.0 8.0
+ 9.0 10.0 11.0 12.0
+ 13.0 14.0 15.0 16.0  
+grid below
+4 4
+>>> 
+
+
+...=end 10:11 PM 3/17/2024.....
+..=7:10 PM 3/17/2024.....
+D = input("Enter input file name : ")
+#Store the information from the file in a list of lists of floats
+input_file = open("inputFile.txt")
+output_file = open("output.txt",'w')
+grid = []
+for line in input_file:
+#    print(line, end="")
+    row = line.split(" ")
+    grid.append(row)
+    output_file.write(str(line))
+print(grid)
+print(grid[0][0])
+
+console OUTPUT
+Lab 5 Ex2: Numeric File Analysis
+Enter input file name : inputFile.txt
+[['4', '4\n'], ['1.0', '2.0', '3.0', '4.0\n'], ['5.0', '6.0', '7.
+0', '8.0\n'], ['9.0', '10.0', '11.0', '12.0\n'], ['13.0', '14.0',
+ '15.0', '16.0']]
+4
+>>> 
+output.txt is changed to:
+4 4
+1.0 2.0 3.0 4.0
+5.0 6.0 7.0 8.0
+9.0 10.0 11.0 12.0
+13.0 14.0 15.0 16.0
+..=end7:10 PM 3/17/2024..........
+===+++end of 6:38 PM 3/17/2024+====

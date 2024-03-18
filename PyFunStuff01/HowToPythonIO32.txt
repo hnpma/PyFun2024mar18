@@ -1,0 +1,122 @@
+HowToPythonIO32
+C:\Users\User\Pictures\MyFamilyFInanJob\1aa02JobTraining\1a03TechTraining\1a02Howto\PythonHowTo
+D:USB20FDnavyBlueYarn\1aabIMP\1aaaaTechTraining2023\1aabTechTraining\1aaabHints\1adPythinHints01
+
+1:07 PM 3/17/2024
+==++1:07 PM 3/17/2024+++===
+PythonI/Ohints02youtube
+D:\1aabIMP\1aaaaTechTraining2023\1aabTechTraining\1aaabHints\1adPythinHints01
+12:37 PM 3/17/2024
+
+"https://www.youtube.com/watch?v=evcUugVyauY12:29 PM 3/17/2024\n")
+
+"https://www.youtube.com/watch?v=evcUugVyauY12:29 PM 3/17/2024\n")
+===++12:37 PM 3/17/2024 +++==
+input.txt contains
+Chevy,Camarro,Corvette,Spark,Volt
+Ford,Escort,Focus,Mustang
+Toyota,Avalon,Camry,Corolla,Prius,RAVE
+
+inputFile.txt contains
+Chevy,Camarro,Corvette,Spark,Volt
+Ford,Escort,Focus,Mustang
+Toyota,Avalon,Camry,Corolla,Prius,RAVE
+
+..=1:16 PM 3/17/2024===
+outfile = "outputFile.txt"
+with open("inputFile.txt") as f1:
+    for line in f1:
+        print(line[:-1])
+print("\nFirst items in each row")
+with open("inputFile.txt") as f1:
+    for line in f1:
+        row = line.split(",")
+        print (row[0])
+OUTPUT
+Chevy,Camarro,Corvette,Spark,Volt
+Ford,Escort,Focus,Mustang
+Toyota,Avalon,Camry,Corolla,Prius,RAV
+First items in each row
+Chevy
+Ford
+Toyota
+>>> 
+
+
+..=end of 1:16 PM 3/17/2024...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+====****OTHER WAYS TO I/O MANIPULATION in Python*****====
+===++12:37 PM 3/17/2024 +++==
+input.txt contains
+Chevy,Camarro,Corvette,Spark,Volt
+Ford,Escort,Focus,Mustang
+Toyota,Avalon,Camry,Corolla,Prius,RAVE
+
+inputFile.txt contains
+Chevy,Camarro,Corvette,Spark,Volt
+Ford,Escort,Focus,Mustang
+Toyota,Avalon,Camry,Corolla,Prius,RAVE
+
+
+..=1:02 PM 3/17/2024........
+print("https://www.youtube.com/watch?v=evcUugVyauY12:29 PM 3/17/2024\n")
+print("Python I/O file manipulation\n")
+infile = "inputFile.txt"
+outfile = "outputFile.txt"
+with open(infile) as f1:
+    for line in f1:
+        print(line)
+print("\n**************")
+with open(infile) as f1:
+    for line in f1:
+        print(line[:-1])
+
+OUTPUT
+
+Python I/O file manipulation
+Chevy,Camarro,Corvette,Spark,Volt
+Ford,Escort,Focus,Mustang
+Toyota,Avalon,Camry,Corolla,Prius,RAVE
+**************
+Chevy,Camarro,Corvette,Spark,Volt
+Ford,Escort,Focus,Mustang
+Toyota,Avalon,Camry,Corolla,Prius,RAV
+>>> 
+..=end of 1:02 PM 3/17/2024...........
+
+
+===++ end of 1:07 PM 3/17/2024 +===

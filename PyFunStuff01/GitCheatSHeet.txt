@@ -1,0 +1,45 @@
+GITcheat Sheet
+
+https://about.gitlab.com/images/press/git-cheat-sheet.pdf
+To navigate to your home directory, use "cd" or "cd ~"
+To navigate up one directory level, use "cd .."
+To navigate to the previous directory (or back), use "cd -"
+To navigate into the root directory, use "cd /"
+gh repo clone kwage/lecture12-2022
+https://github.com/kwage/lecture12-2022.git
+9:52 AM 1/26/2017
+cd file path
+git init
+git status 
+git add .  OR 7:22 AM 2/8/2024
+       To add and commit files to a Git repository
+Enter git add --all at the command line prompt in your local project directory to add the files or changes to the repository.
+git commit -m ''My comment"
+git remote add origin remote repository github address
+    Asks for user name HannahMoses
+    Asks for password  m12e
+
+git push origin master
+==========++++++++=======
+TO CLONE REMOTE REPO INTO LOCAL GIT REPO:
+git clone path
+EXAMPLE :
+brown@DESKTOP-IK7MNGP MINGW64 /gitcode/lacu2
+$ git clone https://github.com/bgschiller/flicklist-python.git
+Cloning into 'flicklist-python'...
+remote: Counting objects: 608, done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 608 (delta 0), reused 0 (delta 0), pack-reused 602
+Receiving objects: 100% (608/608), 85.34 KiB | 0 bytes/s, done.
+Resolving deltas: 100% (374/374), done.
+
+=========++++++=============
+
+
+
+
+
+
+
+
+

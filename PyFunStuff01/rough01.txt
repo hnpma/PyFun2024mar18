@@ -1,0 +1,67 @@
+rough01
+D:\TechKidTraining\1a23TechTrainng\1aaashTechTraining2024\02edKid\edKid2024\PythonLab5
+7:33 PM 3/17/2024
+
+#lab 5Exercise 2: Numeric File Analysis
+#Obtain a file name from the user, which will contain data pertaining
+#     to a 2D grid of numbers
+#Store the information from the file in a list of lists of floats
+#Create a file for each of the following:
+#averages.txt : contains the overall average of the entire array,
+#               then the average of each row
+#reverse.txt : contains the original values but each row is reversed
+#flipped.txt : contains the original values but is flipped top to
+#             bottom (first row is now the last row etc.)
+#If the dimensions of array are symmetric (NxN),
+#create a diagonal.txt: contains the array mirrored on the diagonal
+print("Lab 5 Ex2: Numeric File Analysis")
+#lab 5Exercise 2: Numeric File Analysis
+#Obtain a file name from the user, which will contain data pertaining
+#     to a 2D grid of numbers
+IF = input("Enter input file name : ")
+
+#Store the information from the file in a list of lists of floats
+input_file = open("inputFile.txt")
+output_file = open("averages.txt",'w')
+grid = []
+aver  = 0
+aver1 = 0
+aver2 = 0
+aver3 = 0
+aver4 = 0
+i = 0
+j = 0
+for line in input_file:
+#    print(line, end="")
+    row = line.split(" ")
+    grid.append(row)
+print(grid([0],[0]))
+'''
+    for i in range(D):
+        aver1+=grid([i],[j])
+        j+=1
+        print(aver1)
+print("Row 1 average: "+str(aver1))
+
+#    output_file.write("Total average : str(aver))
+#Create a file for each of the following:
+#averages.txt : contains the overall average of the entire array,
+#               then the average of each row
+
+'''
+'''
+for line in input_file:
+    row = line.split(" ")
+    grid.append(row)
+print(grid([0],[0]))
+print(i)
+
+#reverse.txt : contains the original values but each row is reversed
+#flipped.txt : contains the original values but is flipped top to
+#             bottom (first row is now the last row etc.)
+#If the dimensions of array are symmetric (NxN),
+#create a diagonal.txt: contains the array mirrored on the diagonal
+#close the files you had opened
+input_file.close()
+output_file.close()
+'''

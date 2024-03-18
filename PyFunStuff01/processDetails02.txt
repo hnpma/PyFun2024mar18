@@ -1,0 +1,1055 @@
+processDetails02
+C:\Users\User\Pictures\MyFamilyFInanJob\1aa02JobTraining\1a03TechTraining\1aaaashTechTraining2024\02edKid\edKid2024\PythonLab5
+
+D:BKPU20FDnavyBlueYarn\TechKidTraining\1a23TechTrainng\1aaashTechTraining2024\02edKid\edKid2024\PythonLab5
+
+6:52 AM 3/16/2024
+https://www.youtube.com/watch?v=evcUugVyauY
+https://github.com/joeyjames/Python
+
+
+
+
+==++ab13 11:15 AM 3/18/2024++==
+input.txt has
+4 4
+1.0 2.0 3.0 4.0
+5.0 6.0 7.0 8.0
+9.0 10.0 11.0 12.0
+13.0 14.0 15.0 16.0
+output.txt 
+4 4
+
+1.0 2.0 3.0 4.0
+
+5.0 6.0 7.0 8.0
+
+9.0 10.0 11.0 12.0
+
+13.0 14.0 15.0 16.0
+../11:15 AM 3/18/2024...
+#Notice output_file=open("output.txt","a")
+grid = []
+input_file = open("input.txt")
+output_file = open("output.txt","a")
+for line in input_file:
+        print(line,end=" ")
+        row = line.split(" ")
+        grid.append(row)
+        print(row[0]+"\n")
+        output_file.write(str(row[0][0])+"\n")
+
+
+print(" ")
+print(" ")
+print(grid[1][0])
+print(grid[1][1])
+
+input_file.close()
+output_file.close()
+
+output.txt has changed to
+4 4
+
+1.0 2.0 3.0 4.0
+
+5.0 6.0 7.0 8.0
+
+9.0 10.0 11.0 12.0
+
+13.0 14.0 15.0 16.0
+4
+1
+5
+9
+1
+console output
+4 4
+ 4
+1.0 2.0 3.0 4.0
+ 1.0
+5.0 6.0 7.0 8.0
+ 5.0
+9.0 10.0 11.0 12.0
+ 9.0
+13.0 14.0 15.0 16.0 13.0
+ 
+ 
+1.0
+2.0
+>>> 
+
+
+.../end 11:15 AM 3/18/2024....
+
+
+===++ end of ab13  11:15 AM 3/18/2024++==
+
+
+
+==++ ab12 10:47 PM 3/17/2024+++=======
+input.txt has
+4 4
+1.0 2.0 3.0 4.0
+5.0 6.0 7.0 8.0
+9.0 10.0 11.0 12.0
+13.0 14.0 15.0 16.0
+../11:13 AM 3/18/2024...
+
+grid = []
+input_file = open("input.txt")
+output_file = open("output.txt","w")
+for line in input_file:
+        print(line,end=" ")
+        row = line.split(" ")
+        grid.append(row)
+        print(row[0]+"\n")
+        output_file.write(str(line[0][0])+"\n")
+
+
+print(" ")
+print(" ")
+print(grid[1][0])
+print(grid[1][1])
+
+input_file.close()
+output_file.close()
+
+
+output.txt has changed to
+4
+1
+5
+9
+1
+console output
+4 4
+ 
+4
+1.0 2.0 3.0 4.0
+ 
+1.0
+5.0 6.0 7.0 8.0
+ 
+5.0
+9.0 10.0 11.0 12.0
+ 
+9.0
+13.0 14.0 15.0 16.0 
+13.0
+ 
+ 
+1.0
+2.0
+>>> 
+.../end11:13 AM 3/18/2024...
+
+
+../11:09 AM 3/18/2024...
+grid = []
+input_file = open("input.txt")
+output_file = open("output.txt","w")
+for line in input_file:
+        print(line,end=" ")
+        row = line.split(" ")
+        grid.append(row)
+        print(row[0])
+        output_file.write(line)
+
+
+print(" ")
+print(" ")
+print(grid[1][0])
+print(grid[1][1])
+
+input_file.close()
+output_file.close()
+
+
+output.txt
+4 4
+1.0 2.0 3.0 4.0
+5.0 6.0 7.0 8.0
+9.0 10.0 11.0 12.0
+13.0 14.0 15.0 16.0
+console output
+4 4
+ 4
+1.0 2.0 3.0 4.0
+ 1.0
+5.0 6.0 7.0 8.0
+ 5.0
+9.0 10.0 11.0 12.0
+ 9.0
+13.0 14.0 15.0 16.0 13.0
+ 
+ 
+1.0
+2.0
+>>> 
+
+
+
+
+../end 11:10 AM 3/18/2024....
+
+
+
+..=10:49 PM 3/17/2024.did NOT work.........
+
+
+grid = []
+input_file = open("input.txt")
+output_file = open("output.txt","w")
+for line in input_file:
+        print(line,end=" ")
+        row = line.split(" ")
+        grid.append(row)
+        print(row[0])
+
+print(" ")
+print(" ")
+print(grid[1][0])
+print(grid[1][1])
+for line in input_file:
+    for n in grid:
+        output_file.write(n[0]+"\n")
+input_file.close()
+output_file.close()
+
+
+OUTPUT of output.txt
+4
+1.0
+5.0
+9.0
+13.0
+console output
+4 4
+ 4
+1.0 2.0 3.0 4.0
+ 1.0
+5.0 6.0 7.0 8.0
+ 5.0
+9.0 10.0 11.0 12.0
+ 9.0
+13.0 14.0 15.0 16.0 13.0
+ 
+ 
+1.0
+2.0
+>>> 
+
+..=end 10:49 PM 3/17/2024.............
+==++ ab12 10:47 PM 3/17/2024+++=======
+==++ ab11 8:39 PM 3/17/2024++==
+inputFile.txt has
+4 4
+1.0 2.0 3.0 4.0
+5.0 6.0 7.0 8.0
+9.0 10.0 11.0 12.0
+13.0 14.0 15.0 16.0
+
+..=10:22 PM 3/17/2024...
+
+
+
+grid = []
+input_file = open("inputFile.txt")
+output_file = open("outputFile.txt","w")
+for line in input_file:
+        print(line,end=" ")
+        row = line.split(" ")
+        grid.append(row)
+        output_file.write(str(row))
+print(" ")
+print(" ")
+print(grid[1][0])
+print(grid[1][1])
+input_file.close()
+output_file.close()
+
+outputFile.txt is changed to :
+['4', '4\n']['1.0', '2.0', '3.0', '4.0\n']['5.0', '6.0', '7.0', '8.0\n']['9.0', '10.0', '11.0', '12.0\n']['13.0', '14.0', '15.0', '16.0']
+console output
+4 4
+ 1.0 2.0 3.0 4.0
+ 5.0 6.0 7.0 8.0
+ 9.0 10.0 11.0 12.0
+ 13.0 14.0 15.0 16.0  
+ 
+1.0
+2.0
+>>> 
+...=end 10:22 PM 3/17/2024....
+
+
+..=10:20 PM 3/17/2024.....
+grid = []
+input_file = open("inputFile.txt")
+output_file = open("outputFile.txt","w")
+for line in input_file:
+        print(line,end=" ")
+        grid.append(line)
+        output_file.write(str(line))
+print(" ")
+print("grid below")
+print(grid[0])
+#string = item
+input_file.close()
+output_file.close()
+
+outputFile.txt is changed to
+
+4 4
+1.0 2.0 3.0 4.0
+5.0 6.0 7.0 8.0
+9.0 10.0 11.0 12.0
+13.0 14.0 15.0 16.0
+
+console output 
+4 4
+ 1.0 2.0 3.0 4.0
+ 5.0 6.0 7.0 8.0
+ 9.0 10.0 11.0 12.0
+ 13.0 14.0 15.0 16.0  
+grid below
+4 4
+>>> 
+..=end10:20 PM 3/17/2024.....
+=====++end of ab11 8:39 PM 3/17/2024++==
+
+
+===+++input.txt 6:03 PM 3/16/2024 ++==
+1 2
+5 6
+ ====++end of input.txt 6:03 PM 3/16/2024
+
+..=6:57 PM 3/16/2024....
+
+grid = []
+input_file = open("input.txt")
+output_file = open("output.txt","w")
+for line in input_file:
+        print(line,end="")
+        grid.append(line)
+        output_file.write(str(line))
+print(" ")
+print("grid below")
+print(grid[0]+grid[1])
+#string = item
+input_file.close()
+output_file.close()
+
+OUTPUT 6:57 PM 3/16/2024
+1 2
+5 6 
+grid below
+1 2
+5 6
+>>> 
+AND also 
+===+++output.txt 6:03 PM 3/16/2024 ++==
+1 2
+5 6
+ ====++end of output.txt 6:03 PM 3/16/2024
+
+..=end 6:57 PM 3/16/2024....
+...=6:40 PM 3/16/2024............
+i = 0
+j = 0
+R = 2
+C = 2
+grid = []
+item = str(0)
+input_file = open("input.txt")
+output_file = open("output.txt","w")
+for line in input_file:
+    for j in range(C):
+        grid.append([i,j])
+    i+=1
+    print("row["+str(i)+"] = "+line)
+ #       output_file.write(str(line))
+print("grid below:")
+print(grid)
+input_file.close()
+OUTPUT
+row[1] = 1 2
+row[2] = 5 6
+grid below:
+[[0, 0], [0, 1], [1, 0], [1, 1]]
+>>> 
+
+...=end 6:40 PM 3/16/2024.....
+
+..=6:39 PM 3/16/2024....
+i = 0
+j = 0
+R = 2
+C = 2
+grid = []
+item = str(0)
+input_file = open("input.txt")
+output_file = open("output.txt","w")
+for line in input_file:
+    for j in range(C):
+        print("row["+str(i)+","+str(j)+"] = "+line)
+        grid.append([i,j])
+    i+=1
+ #       output_file.write(str(line))
+print("grid below:")
+print(grid)
+input_file.close()
+
+OUTPUT
+row[0,0] = 1 2
+row[0,1] = 1 2
+row[1,0] = 5 6
+row[1,1] = 5 6
+grid below:
+[[0, 0], [0, 1], [1, 0], [1, 1]]
+>>> 
+....=end 6:39 PM 3/16/2024.....
+
+...=6:38 PM 3/16/2024.......
+i = 0
+j = 0
+R = 2
+C = 2
+grid = []
+item = str(0)
+input_file = open("input.txt")
+output_file = open("output.txt","w")
+for line in input_file:
+    for j in range(C):
+        print("row["+str(i)+","+str(j)+"] = "+line)
+        grid.append([i,j])
+i+=1
+ #       output_file.write(str(line))
+print("grid below:")
+print(grid)
+
+#string = item
+input_file.close()
+output_file.close()
+OUTPUT
+row[0,0] = 1 2
+row[0,1] = 1 2
+row[0,0] = 5 6
+row[0,1] = 5 6
+grid below:
+[[0, 0], [0, 1], [0, 0], [0, 1]]
+>>> 
+
+
+...=end 6:38 PM 3/16/2024......
+==++end of ab11 6:32 PM 3/16/2024++==
+
+
+==++ ab10 6:02 PM 3/16/2024 +====
+===+++input.txt 6:03 PM 3/16/2024 ++==
+1 2
+5 6
+ ====++end of input.txt 6:03 PM 3/16/2024
+
+
+...=6:18 PM 3/16/2024...............
+
+i = 0
+j = 0
+R = 2
+C = 2
+grid = []
+item = str(0)
+input_file = open("input.txt")
+output_file = open("output.txt","w")
+for line in input_file:
+    for i in range(R):
+        for j in range(C):
+            print("row["+str(i)+","+str(j)+"] = "+line)
+#            print(line,end="")
+            grid.append([i,j])
+ #       print(line,end="")
+ #       output_file.write(str(line))
+print("grid below:")
+print(grid)
+
+
+  OUTPUT  6:18 PM 3/16/2024
+
+row[0,0] = 1 2
+row[0,1] = 1 2
+row[1,0] = 1 2
+row[1,1] = 1 2
+row[0,0] = 5 6
+row[0,1] = 5 6
+row[1,0] = 5 6
+row[1,1] = 5 6
+grid below:
+[[0, 0], [0, 1], [1, 0], [1, 1], [0, 0], [0, 1], [1, 0], [1, 1]]
+>>> 
+
+
+...=end of 6:18 PM 3/16/2024....
+
+
+......=6:13 PM 3/16/2024..............
+i = 0
+j = 0
+R = 2
+C = 2
+grid = []
+item = str(0)
+input_file = open("input.txt")
+output_file = open("output.txt","w")
+for line in input_file:
+    for i in range(R):
+        for j in range(C):
+            print("row["+str(i)+","+str(j)+"] = "+line,end="")
+            print(line,end=",")
+ #           grid.append([i,j])
+ #       print(line,end="")
+ #       output_file.write(str(line))
+print()
+
+#string = item
+input_file.close()
+output_file.close()
+
+
+OUTPUT 6:14 PM 3/16/2024
+row[0,0] = 1 2
+1 2
+,row[0,1] = 1 2
+1 2
+,row[1,0] = 1 2
+1 2
+,row[1,1] = 1 2
+1 2
+,row[0,0] = 5 65 6,row[0,1] = 5 65 6,row[1,0] = 5 65 6,row[1,1] = 5 65 6,
+>>> 
+....=end of 6:14 PM 3/16/2024.................
+
+
+
+
+
+
+............=.......................
+nums = []6:07 PM 3/16/2024
+for i in range(3):
+    print("nums.append below: ")
+    nums.append([])
+    print("In outer loop: i = "+str(i))
+    print(nums)
+    for j in range(1, 4):
+        print(nums)
+        print("In inner loop: i ="+str(i)+" j = "+str(j))
+        nums[i].append(j)
+print(nums)
+
+===+++ end of ab10 6:02 PM 3/16/2024 +===
+
+
+==++ ab09 5:51 PM 3/16/2024 ++==
+nums = []
+for i in range(3):
+    print("nums.append below: ")
+    nums.append([])
+    print("In outer loop: i = "+str(i))
+    print(nums)
+    for j in range(1, 4):
+        print(nums)
+        print("In inner loop: i ="+str(i)+" j = "+str(j))
+        nums[i].append(j)
+print(nums)
+OUTPUT 5:51 PM 3/16/2024
+
+nums.append below: 
+In outer loop: i = 0
+[[]]
+[[]]
+[[]]
+In inner loop: i =0 j = 1
+[[1]]
+In inner loop: i =0 j = 2
+[[1, 2]]
+In inner loop: i =0 j = 3
+nums.append below: 
+In outer loop: i = 1
+[[1, 2, 3], []]
+[[1, 2, 3], []]
+In inner loop: i =1 j = 1
+[[1, 2, 3], [1]]
+In inner loop: i =1 j = 2
+[[1, 2, 3], [1, 2]]
+In inner loop: i =1 j = 3
+nums.append below: 
+In outer loop: i = 2
+[[1, 2, 3], [1, 2, 3], []]
+[[1, 2, 3], [1, 2, 3], []]
+In inner loop: i =2 j = 1
+[[1, 2, 3], [1, 2, 3], [1]]
+In inner loop: i =2 j = 2
+[[1, 2, 3], [1, 2, 3], [1, 2]]
+In inner loop: i =2 j = 3
+[[1, 2, 3], [1, 2, 3], [1, 2, 3]]
+==++ end of ab09 5:51 PM 3/16/2024 ++==
+
+
+
+==++ ab08 5:07 PM 3/16/2024++===
+==+=empty output file  4:36 PM 3/16/2024++==
+
+=== end of output.txt 4:36 PM 3/16/2024+==
+
+===+++input.txt 4:36 PM 3/16/2024 ++==
+1,2
+5,6
+ ====++end of input.txt 
+
+..........=...5:14 PM 3/16/2024................
+i = 0
+j = 0
+R = 2
+C = 2
+grid = []
+item = str(0)
+input_file = open("input.txt")
+output_file = open("output.txt","w")
+for line in input_file:
+    for i in range(R):
+        for j in range(C):
+            print(line,end="")
+ #           grid.append([i,j])
+ #       print(line,end="")
+ #       output_file.write(str(line))
+print()
+#string = item
+input_file.close()
+output_file.close()
+OUTPUT 5:14s PM 3/16/2024
+Started this  directory on 1:54 PM 3/14/2024 with two files input.txt AND Py2024mar07.py
+1,2
+1,2
+1,2
+1,2
+5,65,65,65,6
+>>> 
+...............=end of 5:14 PM 3/16/2024=........
+
+
+==++end of 5:07 PM 3/16/2024 ++==
+
+
+==+ab07 4:35 PM 3/16/2024++===
+
+==+=output file  4:36 PM 3/16/2024++==
+OUTPUT :  7:39 AM 3/16/2024
+=== end of output.txt 4:36 PM 3/16/2024+==
+
+===+++input.txt 4:36 PM 3/16/2024 ++==
+4
+5
+ ====++end of input.txt 
+
+
+...........=4:49 PM 3/16/2024==========
+
+i = 0
+j = 0
+R = 2
+C = 3
+input_file = open("input.txt")
+output_file = open("output.txt","w")
+for line in input_file:
+        print(line,end="")
+ #       output_file.write(str(line))
+print()
+#string = item
+input_file.close()
+output_file.close()
+print("grid below:")
+grid = [] #empty list
+row1 = [2, 4, 6, 8]
+row2 = [3, 6, 9, 12]
+row3 = [4, 8, 12, 16]
+
+grid.append(row1) #add entire lists to grid
+grid.append(row2)
+grid.append(row3)
+
+print(grid) #prints [[2, 4, 6, 8], [3, 6, 9, 12], [4, 8, 12, 16]]
+print(grid[0]) #prints [2, 4, 6, 8]
+print(grid[1][2]) #prints 9
+OUTPUT 4:49 PM 3/16/2024
+Started this  directory on 1:54 PM 3/14/2024 with two files input.txt AND Py2024mar07.py
+4
+5
+grid below:
+[[2, 4, 6, 8], [3, 6, 9, 12], [4, 8, 12, 16]]
+[2, 4, 6, 8]
+9
+>>> 
+
+
+..............=end of 4:49 PM 3/16/2024========
+
+.......=.......
+i = 0
+j = 0
+R = 2
+C = 3
+input_file = open("input.txt")
+output_file = open("output.txt","w")
+for line in input_file:
+        print(line,end="")
+ #       output_file.write(str(line))
+print()
+#string = item
+input_file.close()
+output_file.close()
+OUTPUT
+4
+5
+>>>
+
+IMP output file is now empty
+..............=.........
+i = 0
+j = 0
+R = 2
+C = 3
+input_file = open("input.txt")
+for line in input_file:
+        print(line,end="")
+print()
+input_file.close()
+OUTPUT
+Started this  directory on 1:54 PM 3/14/2024 with two files input.txt AND Py2024mar07.py
+4
+5
+>>> 
+...........=................
+i = 0
+j = 0
+R = 2
+C = 3
+input_file = open("input.txt")
+for line in input_file:
+        print(line,end="")\n
+input_file.close()
+OUTPUT
+Started this  directory on 1:54 PM 3/14/2024 with two files input.txt AND Py2024mar07.py
+4
+5>>> 
+............=..............
+i = 0
+j = 0
+R = 2
+C = 3
+input_file = open("input.txt")
+for line in input_file:
+        print(line,end=" ")
+input_file.close()
+OUTPUT
+Started this  directory on 1:54 PM 3/14/2024 with two files input.txt AND Py2024mar07.py
+4
+ 5 >>> 
+
+
+
+=== end of ab07 4:35 PM 3/16/2024++=
+
+==+ab06 8:07 AM 3/16/2024 ++===
+===+++input.txt 8:07 AM 3/16/2024 ++==
+1 is One
+2 is Two
+ ====++end of input.txt 
+
+i = 0
+j = 0
+R = 2
+C = 3
+input_file = open("input.txt")
+for line in input_file:
+    if (i<R):
+        if(j<C):
+            print("row =  "+ str(i)+" [ " + str(i) + ","+str(j)+" ] = "+ str(line))
+            j+=1
+            #print(line)
+        print("row "+str(i) + " has been displayed ")
+        i+=1
+print(" grid containing "+ str(i) +" rows and "+ str(j)+" columns has been displayed.")
+print("***")
+input_file.close()
+
+
+OUTPUT abo6 8:07 AM 3/16/2024
+
+Started this  directory on 1:54 PM 3/14/2024 with two files input.txt AND Py2024mar07.py
+row =  0 [ 0,0 ] = 1 is One
+row 0 has been displayed 
+row =  1 [ 1,1 ] = 2 is Two
+row 1 has been displayed 
+ grid containing 2 rows and 2 columns has been displayed.
+***
+==++ end of ab06 8:07 AM 3/16/2024 +==
+
+
+==++ab05 7:52 AM 3/16/2024 +====
+===+++input.txt 7:39 AM 3/16/2024 ++==
+1 is One
+2 is Two
+ ====++end of input.txt  7:39 AM 3/16/2024 +====
+
+i = 0
+D = 2
+input_file = open("input.txt")
+for line in input_file:
+    if (i<D):
+        print("i =  "+ str(i)+" row [ " + str(i) + " ] = "+ str(line))
+        i+=1
+        print(line)
+print("***")
+
+input_file.close()
+
+
+
+OUTPUT
+Started this  directory on 1:54 PM 3/14/2024 with two files input.txt AND Py2024mar07.py
+i =  0 row [ 0 ] = 1 is One
+1 is One
+i =  1 row [ 1 ] = 2 is Two
+2 is Two
+***
+>>> 
+
+
+
+==++end of  ab05 7:52 AM 3/16/2024++==
+
+==++ ab04 7:38 AM 3/16/2024 +=====
+#1:54 PM 3/14/2024 lab 5 ex 2 I/o file manipulation
+print("Started this  directory on 1:54 PM 3/14/2024 with two files input.txt AND Py2024mar07.py")
+'''
+grid = [] #empty list
+row1 = [2, 4, 6, 8]
+row2 = [3, 6, 9, 12]
+row3 = [4, 8, 12, 16]
+
+grid.append(row1) #add entire lists to grid
+grid.append(row2)
+grid.append(row3)
+
+print(grid) #prints [[2, 4, 6, 8], [3, 6, 9, 12], [4, 8, 12, 16]]
+print(grid[0]) #prints [2, 4, 6, 8]
+print(grid[1][2]) #prints 9
+
+#print each element using nested for in loops
+for row in grid:
+   for num in row:
+      print(num, end='') # turn off automatic newline after each print
+
+   print('') #print a newline after each row
+
+'''
+i = 0
+D = 4
+input_file = open("input.txt")
+for line in input_file:
+    if (i<D):
+        print("i =  "+ str(i)+" D = "+str(D)+" :  "+" row [ " + str(i) + " ] = "+ str(line))
+        i+=1
+
+#output_file = open("output.txt","w")
+#string = item
+#output_file.write(str(item))
+input_file.close()
+#output_file.close()
+
+
+OUTPUT
+
+Started this  directory on 1:54 PM 3/14/2024 with two files input.txt AND Py2024mar07.py
+i =  0 D = 4 :   row [ 0 ] = 1
+i =  1 D = 4 :   row [ 1 ] = 2
+i =  2 D = 4 :   row [ 2 ] = 3
+i =  3 D = 4 :   row [ 3 ] = 4
+
+
+==++ end of ab04 7:38 AM 3/16/2024 ++==
+
+
+==++ ab03 7:37 AM 3/16/2024 ++====
+i = 0
+D = 4
+input_file = open("input.txt")
+for line in input_file:
+    if (i<D):
+        print("i =  "+ str(i)+" D = "+str(D)+" :  "+line)
+        print("item [ " + str(i) + " ] = "+ str(line))
+        i+=1
+
+#output_file = open("output.txt","w")
+#string = item
+#output_file.write(str(item))
+input_file.close()
+#output_file.close()
+
+
+
+
+
+Started this  directory on 1:54 PM 3/14/2024 with two files input.txt AND Py2024mar07.py
+i =  0D = 4 :  1
+item [ 0 ] = 1
+i =  1D = 4 :  2
+item [ 1 ] = 2
+i =  2D = 4 :  3
+item [ 2 ] = 3
+i =  3D = 4 :  4
+item [ 3 ] = 4
+>>> 
+
+==++ end of ab03 7:37 AM 3/16/2024 ++===
+
+==+++ ab01 progCode ++====
+
+#1:54 PM 3/14/2024 lab 5 ex 2 I/o file manipulation
+print("Started this  directory on 1:54 PM 3/14/2024 with two files input.txt AND Py2024mar07.py")
+'''
+
+grid = [] #empty list
+row1 = [2, 4, 6, 8]
+row2 = [3, 6, 9, 12]
+row3 = [4, 8, 12, 16]
+
+grid.append(row1) #add entire lists to grid
+grid.append(row2)
+grid.append(row3)
+
+print(grid) #prints [[2, 4, 6, 8], [3, 6, 9, 12], [4, 8, 12, 16]]
+print(grid[0]) #prints [2, 4, 6, 8]
+print(grid[1][2]) #prints 9
+
+
+#print each element using nested for in loops
+for row in grid:
+   for num in row:
+      print(num, end='') # turn off automatic newline after each print
+
+   print('') #print a newline after each row
+
+'''
+item = 0
+D = 4
+input_file = open("input.txt")
+for i in range( D):
+    for line in input_file:
+        print(line)
+        print("item [ " + str(line) + " ] ")
+
+output_file = open("output.txt","w")
+#string = item
+output_file.write(str(item))
+input_file.close()
+output_file.close()
+
+
+OUTPUT of ab01 progCode
+
+Started this  directory on 1:54 PM 3/14/2024 with two files input.txt AND Py2024mar07.py
+1
+item [ 1
+ ] 
+2
+item [ 2
+ ]
+3
+item [ 3
+ ]
+4
+item [ 4
+ ]
+item [
+ ]
+
+===++ end of ab01 progCode  ++===
+
+==++ ab02 7:15 AM 3/16/2024 progCode++++++
+item = 0
+D = 4
+input_file = open("input.txt")
+for line in input_file:
+    for i in range( D):
+        print("row "+ str(i)+" :  "+line)
+        print("item [ " + str(i) + " ] = "+ str(line))
+
+#output_file = open("output.txt","w")
+#string = item
+#output_file.write(str(item))
+input_file.close()
+#output_file.close()
+
+OUTPUT of ab02 progCode:
+
+Started this  directory on 1:54 PM 3/14/2024 with two files input.txt AND Py2024mar07.py
+row 0 :  1
+item [ 0 ] = 1
+row 1 :  1
+item [ 1 ] = 1
+row 2 :  1
+item [ 2 ] = 1
+row 3 :  1
+item [ 3 ] = 1
+row 0 :  2
+item [ 0 ] = 2
+row 1 :  2
+item [ 1 ] = 2
+row 2 :  2
+item [ 2 ] = 2
+row 3 :  2
+item [ 3 ] = 2
+row 0 :  3
+item [ 0 ] = 3
+row 1 :  3
+item [ 1 ] = 3
+row 2 :  3
+item [ 2 ] = 3
+row 3 :  3
+item [ 3 ] = 3
+row 0 :  4
+item [ 0 ] = 4
+row 1 :  4
+item [ 1 ] = 4
+row 2 :  4
+item [ 2 ] = 4
+row 3 :  4
+item [ 3 ] = 4
+row 0 :  
+item [ 0 ] = 
+row 1 :  
+item [ 1 ] = 
+row 2 :  
+item [ 2 ] = 
+row 3 :  
+item [ 3 ] = 
+>>>  
+===++ end of ab02 7:15 AM 3/16/2024 progCode +++++
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

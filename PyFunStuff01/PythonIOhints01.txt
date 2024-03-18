@@ -1,0 +1,552 @@
+PythonI/Ohints01
+D:BKPU20FDnavyBlueYarn\1aabIMP\1aaaaTechTraining2023\1aabTechTraining\1aaabHints\1adPythinHints01
+7:29 PM 3/16/2024
+==+++ 7:29 PM 3/16/2024 +++=======
+input.txt contains
+1 2
+5 6
+
+..=9:13 PM 3/16/2024...
+
+
+grid = []
+row_average=0
+i = 0
+j = 0
+D = int(input("Dimension of square grid: "))
+input_file = open("input.txt")
+output_file = open("output.txt","w")
+for line in input_file:
+    print(line,end="")
+    output_file.write(line)
+    grid.append(line)
+    for i in range(D):
+        j = 0
+        print("line["+str(i)+"]= "+line[j])
+        print("j = "+str(j))
+        print("i=  "+str(i))
+        r=int(i)
+        s=int(j)
+    print("line["+str(j)+","+str(i)+"] below :")
+    print(grid[j]) #print(line[s,r])
+    print("j = "+str(j)+"  i=  "+str(i))
+print("All done & i = "+str(i))
+output_file.write("\nCopied input file.Done !")
+print("grid below")
+print(grid[0]+grid[1])
+print("line[0] below: ")
+print(line[0])
+print(str(line[0]))
+print("line[1] below: ")
+print(str(line[1]))
+#output_file.write("Row 1 average: "+str(row_average))
+#string = item
+input_file.close()
+output_file.close()
+
+
+OUTPUT 9:13 PM 3/16/2024
+Dimension of square grid: 2
+1 2
+line[0]= 1
+j = 0
+i=  0
+line[1]= 1
+j = 0
+i=  1
+line[0,1] below :
+1 2
+j = 0  i=  1
+5 6line[0]= 5
+j = 0
+i=  0
+line[1]= 5
+j = 0
+i=  1
+line[0,1] below :
+1 2
+j = 0  i=  1
+All done & i = 1
+grid below
+1 2
+5 6
+line[0] below: 
+5
+5
+line[1] below: 
+ 
+>>> 
+output.txt contains data below :
+1 2
+5 6
+Copied input file.Done !
+
+..=end 9:13 PM 3/16/2024......
+
+
+..=8:59 PM 3/16/2024.....
+
+grid = []
+row_average=0
+i = 0
+j = 0
+D = int(input("Dimension of square grid: "))
+input_file = open("input.txt")
+output_file = open("output.txt","w")
+for line in input_file:
+    print(line,end="")
+    output_file.write(line)
+    grid.append(line)
+    for i in range(D):
+        j = 0
+        print("line["+str(i)+"]= "+line[i])
+        print("j = "+str(j))
+        print("i=  "+str(i))
+    print("line["+str(j)+","+str(i)+"]= "+line[j])
+    print("j = "+str(j)+"i=  "+str(i))
+print("All done & i = "+str(i))
+output_file.write("\nCopied input file.Done !")
+print("grid below")
+print(grid[0]+grid[1])
+print("line[0] below: ")
+print(line[0])
+print(str(line[0]))
+print("line[1] below: ")
+print(str(line[1]))
+#output_file.write("Row 1 average: "+str(row_average))
+#string = item
+input_file.close()
+output_file.close()
+
+
+
+OUTPUT 8:59 PM 3/16/2024
+Dimension of square grid: 2
+1 2
+line[0]= 1
+j = 0
+i=  0
+line[1]=  
+j = 0
+i=  1
+line[0,1]= 1
+j = 0i=  1
+5 6line[0]= 5
+j = 0
+i=  0
+line[1]=  
+j = 0
+i=  1
+line[0,1]= 5
+j = 0i=  1
+All done & i = 1
+grid below
+1 2
+5 6
+line[0] below: 
+5
+5
+line[1] below: 
+ 
+>>> 
+output.txt contains the data below :
+
+
+
+...=end 8:59 PM 3/16/2024...........
+
+
+...=8:43 PM 3/16/2024.........
+
+grid = []
+row_average=0
+i = 0
+D = int(input("Dimension of square grid: "))
+input_file = open("input.txt")
+output_file = open("output.txt","w")
+for line in input_file:
+    print(line,end="")
+    output_file.write(line)
+    grid.append(line)
+    for i in range(D):
+        print("line["+str(i)+"]= "+line[i])
+#           row_average+=int(line[i])
+        print("i=  "+str(i)+" row_average = "+str(row_average))
+    print("line["+str(j)+"]= "+line[i])
+output_file.write("Copied input file.Done !")
+print("grid below")
+print(grid[0]+grid[1])
+print("line[0] below: ")
+print(line[0])
+print(str(line[0]))
+print("line[1] below: ")
+print(str(line[1]))
+#output_file.write("Row 1 average: "+str(row_average))
+#string = item
+input_file.close()
+output_file.close()
+
+
+OUTPUT
+Dimension of square grid: 2
+1 2
+line[0]= 1
+i=  0 row_average = 0
+line[1]=  
+i=  1 row_average = 0
+line[1]=  
+5 6line[0]= 5
+i=  0 row_average = 0
+line[1]=  
+i=  1 row_average = 0
+line[1]=  
+grid below
+1 2
+5 6
+line[0] below: 
+5
+5
+line[1] below: 
+ 
+>>> 
+
+
+
+
+..=end 8:43 PM 3/16/2024....
+
+
+..-8:38 PM 3/16/2024..........
+grid = []
+row_average=0
+i = 0
+D = int(input("Dimension of square grid: "))
+input_file = open("input.txt")
+output_file = open("output.txt","w")
+for line in input_file:
+    print(line,end="")
+    output_file.write(line)
+    grid.append(line)
+    for i in range(D):
+        print("line["+str(i)+"]= "+line[i])
+#           row_average+=int(line[i])
+        print("i=  "+str(i)+" row_average = "+str(row_average))
+    print("line["+str(i)+"]= "+line[i])
+output_file.write("Copied input file.Done !")
+print("grid below")
+print(grid[0]+grid[1])
+print("line[0] below: ")
+print(line[0])
+print(str(line[0]))
+print("line[1] below: ")
+print(str(line[1]))
+#output_file.write("Row 1 average: "+str(row_average))
+#string = item
+input_file.close()
+output_file.close()
+
+OUTPUT on console:
+Dimension of square grid: 2
+Dimension of square grid: 2
+Dimension of square grid: 2
+1 2
+2
+line[0]= 1
+i=  0 row_average = 0
+line[0]= 1
+line[1]=  
+i=  1 row_average = 0
+line[1]=  
+5 62
+line[0]= 5
+i=  0 row_average = 0
+line[0]= 5
+line[1]=  
+i=  1 row_average = 0
+line[1]=  
+Dimension of square grid: 2
+1 2
+line[0]= 1
+i=  0 row_average = 0
+line[1]=  
+i=  1 row_average = 0
+line[1]=  
+5 6line[0]= 5
+i=  0 row_average = 0
+line[1]=  
+i=  1 row_average = 0
+line[1]=  
+grid below
+1 2
+5 6
+line[0] below: 
+5
+5
+line[1] below: 
+ 
+>>> 
+
+output.txt contains
+1 2
+5 6Copied input file.Done !
+
+....end of 8:38 PM 3/16/2024 .........
+
+
+..= 8:31 PM 3/16/2024  ......
+
+grid = []
+row_average=0
+i = 0
+D = int(input("Dimension of square grid: "))
+input_file = open("input.txt")
+output_file = open("output.txt","w")
+for line in input_file:
+        print(line,end="")
+        grid.append(line)
+        print(D)
+        for i in range(D):
+            print("line["+str(i)+"]= "+line[i])
+#           row_average+=int(line[i])
+            print("i=  "+str(i)+" row_average = "+str(row_average))
+            print("line["+str(i)+"]= "+line[i])
+print("grid below")
+print(grid[0]+grid[1])
+print("line[0] below: ")
+print(line[0])
+
+
+
+
+
+
+OUTPUT 
+Dimension of square grid: 2
+Dimension of square grid: 2
+Dimension of square grid: 2
+1 2
+2
+line[0]= 1
+i=  0 row_average = 0
+line[0]= 1
+line[1]=  
+i=  1 row_average = 0
+line[1]=  
+5 62
+line[0]= 5
+i=  0 row_average = 0
+line[0]= 5
+line[1]=  
+i=  1 row_average = 0
+line[1]=  
+grid below
+1 2
+5 6
+line[0] below: 
+5
+5
+line[1] below: 
+ 
+>>> 
+
+..=end of 8:31 PM 3/16/2024     .....
+
+
+..=8:09 PM 3/16/2024..............
+grid = []
+row_average=0
+i = 0
+input_file = open("input.txt")
+output_file = open("output.txt","w")
+for line in input_file:
+        print(line,end="")
+        grid.append(line)
+        print("line["+str(i)+"]= "+line[i])
+#        row_average+=int(grid[i,i])
+        i+=1
+        print("i=  "+str(i))
+        print("line["+str(i)+"]= "+line[i])
+print("grid below")
+print(grid[0]+grid[1])
+print("grid[0,1] below: ")
+print(type(line[0]))
+print(str(line[0]))
+print("line[1] below: ")
+print(str(line[1]))
+#output_file.write("Row 1 average: "+str(row_average))
+#string = item
+input_file.close()
+output_file.close()
+
+OUTPUT  of console:
+1 2
+line[0]= 1
+i=  1
+line[1]=  
+5 6line[1]=  
+i=  2
+line[2]= 6
+grid below
+1 2
+5 6
+grid[0,1] below: 
+<class 'str'>
+5
+line[1] below: 
+ 
+>>> 
+output file has no data OUTPUT: 
+
+
+
+//=end 8:09 PM 3/16/2024...............
+
+.........=..................
+
+grid = []
+input_file = open("input.txt")
+output_file = open("output.txt","w")
+for line in input_file:
+        print(line,end="")
+        grid.append(line)
+        output_file.write(str(line[0]))
+print(" ")
+print("grid below")
+print(grid[0]+grid[1])
+#string = item
+input_file.close()
+output_file.close()
+
+OUTPUT
+1 2
+5 6
+grid below
+1 2
+5 6
+
+And ALso output.txt contains the following data :
+
+15
+
+
+===++ end of 7:29 PM 3/16/2024 ++===
+
+==++ 12:28 PM 3/17/2024 Cleared h2023sep15@outlook Pyanywhere++==
+
+#1:54 PM 3/14/2024 lab 5 ex 2 I/o file manipulation
+#print("Started this  directory on 1:54 PM 3/14/2024 with two files input.txt AND Py2024mar07.py")
+'''
+grid = [] #empty list
+row1 = [2, 4, 6, 8]
+row2 = [3, 6, 9, 12]
+row3 = [4, 8, 12, 16]
+
+grid.append(row1) #add entire lists to grid
+grid.append(row2)
+grid.append(row3)
+
+print(grid) #prints [[2, 4, 6, 8], [3, 6, 9, 12], [4, 8, 12, 16]]
+print(grid[0]) #prints [2, 4, 6, 8]
+print(grid[1][2]) #prints 9
+
+#print each element using nested for in loops
+for row in grid:
+   for num in row:
+      print(num, end='') # turn off automatic newline after each print
+
+   print('') #print a newline after each row
+
+'''
+'''
+i = 0
+j = 0
+R = 2
+C = 2
+grid = []
+item = str(0)
+input_file = open("input.txt")
+output_file = open("output.txt","w")
+for line in input_file:
+    grid.append(line)
+    i+=1
+    print(line)
+    print("row 1 grid below:")
+    print(grid)
+ #       output_file.write(str(line))
+print("grid below:")
+print(grid)
+input_file.close()
+#string = item
+
+output_file.close()
+'''
+
+'''
+print("grid below:")
+grid = [] #empty list
+row1 = [2, 4, 6, 8]
+row2 = [3, 6, 9, 12]
+row3 = [4, 8, 12, 16]
+
+grid.append(row1) #add entire lists to grid
+grid.append(row2)
+grid.append(row3)
+
+print(grid) #prints [[2, 4, 6, 8], [3, 6, 9, 12], [4, 8, 12, 16]]
+print(grid[0]) #prints [2, 4, 6, 8]
+print(grid[1][2]) #prints 9
+'''
+'''
+nums = []
+for i in range(3):
+    print("nums.append below: ")
+    nums.append([])
+    print("In outer loop: i = "+str(i))
+    print(nums)
+    for j in range(1, 4):
+        print(nums)
+        print("In inner loop: i ="+str(i)+" j = "+str(j))
+        nums[i].append(j)
+print(nums)
+
+grid = []
+row_average=0
+i = 0
+j = 0
+D = int(input("Dimension of square grid: "))
+input_file = open("input.txt")
+output_file = open("output.txt","w")
+for line in input_file:
+    print(line,end="")
+    output_file.write(line)
+    grid.append(line)
+    for i in range(D):
+        j = 0
+        print("line["+str(i)+"]= "+line[j])
+        print("j = "+str(j))
+        print("i=  "+str(i))
+        r=int(i)
+        s=1
+    print("line["+str(j)+","+str(i)+"] below :")
+print("s=  "+str(s))
+print(grid[s]) #print(line[s,r])
+print("j = "+str(j)+"  i=  "+str(i))
+print("All done & i = "+str(i))
+output_file.write("\nCopied input file.Done !")
+print("grid below")
+print(grid[0]+grid[1])
+print("line[0] below: ")
+print(line[0])
+print(str(line[0]))
+print("line[1] below: ")
+print(str(line[1]))
+#output_file.write("Row 1 average: "+str(row_average))
+#string = item
+input_file.close()
+output_file.close()
+'''
+
+
+==++emd of  12:28 PM 3/17/2024 Cleared h2023sep15@outlook Pyanywhere++==
+
+

@@ -1,0 +1,82 @@
+Lab5averagesCodeWrongForOnlyRow4
+C:\Users\User\Documents\PyFun2024mar18\PyFunStuff01
+
+grid = []
+sums = []
+row1 = []
+row2 = []
+row3 = []
+row4 = []
+sum = 0.0
+row1sum = 0.0
+row1ave = 0.0
+row2sum = 0.0
+row2ave = 0.0
+row3sum = 0.0
+row3ave = 0.0
+row4sum = 0.0
+row4ave = 0.0
+taverage = 0.0
+D ,d,i,j = 0,0,0,0.
+
+input_file = open("input.txt")
+output_file = open("totalsum.txt","w")
+output_file.write(" ")
+for line in input_file:
+    print(line,end=" ")
+    row = line.split(" ")
+    grid.append(row)
+print(" ")
+D = int((grid[0][0]))
+print("\nD = " +str(D))
+d = float(D)
+for i in range(1,5):
+    for j in range(D):
+        fnum=float((grid[i][j]))
+        sums.append(fnum)
+output_file.write(str(sums))
+print(sums)
+input_file = open("totalsum.txt")
+output_file = open("averages.txt","a")
+sum = 0
+row1 = sums[0:D:1]
+row2 = sums[4:8:1]
+row3 = sums[8:12:1]
+row4 = sums[13:17:1]
+print("\nrow4 : ")
+print(row4)
+
+for item in row1:
+    row1sum+=item
+row1ave=row1sum/d
+
+for item in row2:
+    row2sum+=item
+row2ave=row2sum/d
+
+for item in row3:
+    row3sum+=item
+row3ave=row3sum/d
+print("\nrow4 : ")
+print(row4)
+for item in row4:
+    row4sum+=item
+row4ave=row4sum/d
+#print("\n s: "+str(s))
+for s in sums:
+    sum+=s
+    print("\n New s: "+str(s)+" sum : "+str(sum))
+    taverage = float(sum/(d*d))
+print("\n Total average : "+str(taverage)+"\n"+
+        " Row 1 average : "+str(row1ave)+"\n"+
+        " Row 2 average : "+str(row2ave)+"\n"+
+        " Row 3 average : "+str(row3ave)+"\n"+
+        " Row 4 average : "+str(row2ave)+"\n")
+
+output_file.write("\n Total average : "+str(taverage)+"\n")
+output_file.write("\n Row 1 average : "+str(row1ave)+"\n")
+output_file.write("\n Row 2 average : "+str(row2ave)+"\n")
+output_file.write("\n Row 3 average : "+str(row3ave)+"\n")
+output_file.write("\n Row 4 average : "+str(row2ave)+"\n")
+input_file.close()
+output_file.close()

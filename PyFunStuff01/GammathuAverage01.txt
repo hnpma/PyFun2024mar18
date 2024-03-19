@@ -4,6 +4,74 @@ C:\Users\User\Documents\PyFun2024mar18\PyFunStuff01
 9:22 PM 3/18/2024
 
 
+==+++9:40 PM 3/18/2024+++===
+
+
+grid = []
+sum = 0.0
+row1ave = 0.0
+row2ave = 0.0
+taverage = 0.0
+D = 0
+i = 0
+j = 0
+sums = []
+row1 = []
+row2 = []
+input_file = open("input.txt")
+output_file = open("totalsum.txt","w")
+output_file.write(" ")
+for line in input_file:
+    print(line,end=" ")
+    row = line.split(" ")
+    grid.append(row)
+print(" ")
+D = int((grid[0][0]))
+print("\nD = " +str(D))
+for i in range(1,D):
+    for j in range(D):
+        fnum=float((grid[i][j]))
+        sums.append(fnum)
+        # print("\nsums : ")
+        # print(sums)
+        output_file.write(grid[i][j])
+print(sums)
+# print("totalsum.txt is used below as input file ")
+input_file = open("totalsum.txt")
+output_file = open("averages.txt","a")
+for s in sums:
+    sum+=s
+    taverage = float(sum/s)
+output_file.write("Total average: "+str(taverage)+"\n")
+sum = 0
+
+for i in range(D):
+    print("\nBefore for loop ,sum: "+str(sum))
+    for s in sums:
+        if i<D:
+            sum+=s
+            print("\n"+str(s)+" sum: "+str(sum))
+print("\nsum "+str(sum)+" /"+str(D)+" :  ")
+row1ave+=float(sum/D)
+output_file.write("Row 1  average : "+str(row1ave)+"\n")
+print("Row 1 average : "+str(row1ave))
+print()
+print(sums)
+input_file.close()
+output_file.close()
+
+console output
+
+
+
+
+
+
+===++end 9:40 PM 3/18/2024+++==
+
+
+
+====================++++++++++++++++++++++==========
 grid = []
 sum = 0.0
 row1ave = 0.0

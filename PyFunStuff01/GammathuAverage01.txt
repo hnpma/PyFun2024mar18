@@ -1,15 +1,13 @@
-Adding columns as arrays
+GammathuAverage01
 C:\Users\User\Documents\PyFun2024mar18\PyFunStuff01
 
-4:42 PM 3/18/2024
+9:22 PM 3/18/2024
 
-
-==++ 8:49 PM 3/18/2024++===
 
 grid = []
 sum = 0.0
-rcount = 0
-ccount = 0#column count
+row1ave = 0.0
+row2ave = 0.0
 taverage = 0.0
 D = 0
 i = 0
@@ -37,54 +35,25 @@ for i in range(1,D):
 print(sums)
 # print("totalsum.txt is used below as input file ")
 input_file = open("totalsum.txt")
-output_file = open("averages.txt","w")
+output_file = open("averages.txt","a")
 for s in sums:
     sum+=s
     taverage = float(sum/s)
 output_file.write("Total average: "+str(taverage))
-
-for ccount in range(D):
-    (rcount==1)
-    print("ccount : "+str(ccount))
-    print("rcount : "+str(rcount))
-    currentItem = s
-    print("\nsums[rcount,ccount] and type :-")
-    print(currentItem)
-    print(type(currentItem))
-    row1.append(currentItem)
+sum = 0
+for s in sums:
+    print("\nBefore for loop ,sum: "+str(sum))
+    for i in range(D):
+        sum+=s
+        print("\n"+str(s)+" sum: "+str(sum))
+        row1ave+=float(sum/D)
+output_file.write("Row 1  average : "+str(row1ave))
+print("Row 1 average : "+str(row1ave))
 print()
 print(sums)
 input_file.close()
 output_file.close()
 
-
 console output
-3 3
- 1.0 2.0 3.0
- 4.0 5.0 6.0
-  
-3 3
- 1.0 2.0 3.0
- 4.0 5.0 6.0
-  
-D = 3
-[1.0, 2.0, 3.0, 4.0, 5.0, 6.0]
-ccount : 0
-rcount : 0
-sums[rcount,ccount] and type :-
-6.0
-<class 'float'>
-ccount : 1
-rcount : 0
-sums[rcount,ccount] and type :-
-6.0
-<class 'float'>
-ccount : 2
-rcount : 0
-sums[rcount,ccount] and type :-
-6.0
-<class 'float'>
-[1.0, 2.0, 3.0, 4.0, 5.0, 6.0]
->>> 
 
-===++ end of 8:49 PM 3/18/2024 +====
+

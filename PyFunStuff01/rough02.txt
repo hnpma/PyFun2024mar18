@@ -1,7 +1,791 @@
+
 rough02
 C:\Users\User\Documents\PyFun2024mar18\PyFunStuff01
 
 3:16 PM 3/18/2024
+==++ 8:56 PM 3/18/2024++++
+
+
+
+===++end 8:56 PM 3/18/2024++===
+
+
+
+totalsum.txt has changed to
+ 1.02.03.0
+4.05.06.0
+
+averages,txt has changed to
+Total average: 3.5Row 1 average : 6.0
+==+++8:53 PM 3/18/2024 NON sense +++===
+
+
+grid = []
+sum = 0.0
+rcount = 0
+ccount = 0#column count
+taverage = 0.0
+D = 0
+i = 0
+j = 0
+sums = []
+row1 = []
+row2 = []
+input_file = open("input.txt")
+output_file = open("totalsum.txt","w")
+output_file.write(" ")
+for line in input_file:
+    print(line,end=" ")
+    row = line.split(" ")
+    grid.append(row)
+print(" ")
+D = int((grid[0][0]))
+print("\nD = " +str(D))
+for i in range(1,D):
+    for j in range(D):
+        fnum=float((grid[i][j]))
+        sums.append(fnum)
+        # print("\nsums : ")
+        # print(sums)
+        output_file.write(grid[i][j])
+print(sums)
+# print("totalsum.txt is used below as input file ")
+input_file = open("totalsum.txt")
+output_file = open("averages.txt","w")
+for s in sums:
+    sum+=s
+    taverage = float(sum/s)
+output_file.write("Total average: "+str(taverage))
+
+for ccount in range(D):
+    for s in sums:
+            (rcount==1)
+            print("ccount : "+str(ccount))
+            print("rcount : "+str(rcount))
+            currentItem = s
+            print("\nsums[rcount,ccount] and type :-")
+            print(currentItem)
+            print(type(currentItem))
+            row1.append(currentItem)
+print()
+print(sums)
+input_file.close()
+output_file.close()
+
+
+console output
+
+3 3
+ 1.0 2.0 3.0
+ 4.0 5.0 6.0
+  
+D = 3
+[1.0, 2.0, 3.0, 4.0, 5.0, 6.0]
+ccount : 0
+3 3
+ 1.0 2.0 3.0
+ 4.0 5.0 6.0
+  
+3 3
+ 1.0 2.0 3.0
+ 4.0 5.0 6.0
+  
+3 3
+ 1.0 2.0 3.0
+ 4.0 5.0 6.0
+  
+3 3
+ 1.0 2.0 3.0
+ 4.0 5.0 6.0
+  
+D = 3
+[1.0, 2.0, 3.0, 4.0, 5.0, 6.0]
+ccount : 0
+rcount : 0
+sums[rcount,ccount] and type :-
+6.0
+<class 'float'>
+ccount : 1
+rcount : 0
+sums[rcount,ccount] and type :-
+3 3
+ 1.0 2.0 3.0
+ 4.0 5.0 6.0
+  
+D = 3
+[1.0, 2.0, 3.0, 4.0, 5.0, 6.0]
+ccount : 0
+rcount : 0
+sums[rcount,ccount] and type :-
+1.0
+<class 'float'>
+ccount : 0
+rcount : 0
+sums[rcount,ccount] and type :-
+2.0
+<class 'float'>
+ccount : 0
+rcount : 0
+sums[rcount,ccount] and type :-
+3.0
+<class 'float'>
+ccount : 0
+rcount : 0
+sums[rcount,ccount] and type :-
+4.0
+<class 'float'>
+ccount : 0
+rcount : 0
+sums[rcount,ccount] and type :-
+5.0
+<class 'float'>
+ccount : 0
+rcount : 0
+sums[rcount,ccount] and type :-
+6.0
+<class 'float'>
+ccount : 1
+rcount : 0
+sums[rcount,ccount] and type :-
+1.0
+<class 'float'>
+ccount : 1
+rcount : 0
+sums[rcount,ccount] and type :-
+2.0
+<class 'float'>
+ccount : 1
+rcount : 0
+sums[rcount,ccount] and type :-
+3.0
+<class 'float'>
+ccount : 1
+rcount : 0
+sums[rcount,ccount] and type :-
+4.0
+<class 'float'>
+ccount : 1
+rcount : 0
+sums[rcount,ccount] and type :-
+5.0
+<class 'float'>
+ccount : 1
+rcount : 0
+sums[rcount,ccount] and type :-
+6.0
+<class 'float'>
+ccount : 2
+rcount : 0
+sums[rcount,ccount] and type :-
+1.0
+<class 'float'>
+ccount : 2
+rcount : 0
+sums[rcount,ccount] and type :-
+2.0
+<class 'float'>
+ccount : 2
+rcount : 0
+sums[rcount,ccount] and type :-
+3.0
+<class 'float'>
+ccount : 2
+rcount : 0
+sums[rcount,ccount] and type :-
+4.0
+<class 'float'>
+ccount : 2
+rcount : 0
+sums[rcount,ccount] and type :-
+5.0
+<class 'float'>
+ccount : 2
+rcount : 0
+sums[rcount,ccount] and type :-
+6.0
+<class 'float'>
+[1.0, 2.0, 3.0, 4.0, 5.0, 6.0]
+>>> 
+
+
+===++end of 8:53 PM 3/18/2024++++==
+
+
+==++6:58 PM 3/18/2024+====
+
+grid = []
+sum = 0.0
+rcount = 0
+ccount = 0#column count
+taverage = 0.0
+D = 0
+i = 0
+j = 0
+sums = []
+row1 = []
+row2 = []
+input_file = open("input.txt")
+output_file = open("totalsum.txt","w")
+output_file.write(" ")
+for line in input_file:
+    print(line,end=" ")
+    row = line.split(" ")
+    grid.append(row)
+print(" ")
+D = int((grid[0][0]))
+print("\nD = " +str(D))
+for i in range(1,D):
+    for j in range(D):
+        fnum=float((grid[i][j]))
+        sums.append(fnum)
+        # print("\nsums : ")
+        # print(sums)
+        output_file.write(grid[i][j])
+print(sums)
+# print("totalsum.txt is used below as input file ")
+input_file = open("totalsum.txt")
+output_file = open("averages.txt","w")
+for s in sums:
+    sum+=s
+    taverage = float(sum/s)
+output_file.write("Total average: "+str(taverage))
+
+for s in sums:
+    for rcount in range(D):
+        if ccount<(D+1):
+            print("ccount : \n:"+str(ccount))
+            print("rcount : \n:"+str(rcount))
+            print(s)
+            ccount+=1
+            row1.append(s)
+        else:
+            rcount+=1
+
+print()
+print(sums)
+input_file.close()
+output_file.close()
+
+
+totalsum.txt has changed to
+ 1.02.03.0
+4.05.06.0
+
+averages.txt has changed to
+Total average: 3.5
+
+console output
+3 3
+ 1.0 2.0 3.0
+3 3
+ 1.0 2.0 3.0
+ 4.0 5.0 6.0 
+ 
+D = 3
+[1.0, 2.0, 3.0, 4.0, 5.0, 6.0]
+3 3
+ 1.0 2.0 3.0
+ 4.0 5.0 6.0
+  
+D = 3
+[1.0, 2.0, 3.0, 4.0, 5.0, 6.0]
+ccount : 
+:0
+rcount : 
+:0
+1.0
+ccount : 
+:1
+rcount : 
+:1
+1.0
+ccount : 
+:2
+rcount : 
+:2
+1.0
+ccount : 
+:3
+rcount : 
+:0
+2.0
+[1.0, 2.0, 3.0, 4.0, 5.0, 6.0]
+>>> 
+
+
+
+==++end of 6:58 PM 3/18/2024+===
+
+
+==++6:35 PM 3/18/2024++++===
+
+==++5:12 PM 3/18/2024++===
+grid = []
+sum = 0.0
+D = 0
+i = 0
+j = 0
+sums = []
+input_file = open("input.txt")
+output_file = open("totalsum.txt","w")
+output_file.write(" ")
+for line in input_file:
+    print(line,end=" ")
+    row = line.split(" ")
+    grid.append(row)
+print(" ")
+D = int((grid[0][0]))
+print("\nD = " +str(D))
+for i in range(1,D):
+    for j in range(D):
+        sums.append(grid[i][j])
+        print(grid[i][j])
+        output_file.write(grid[i][j])
+i = 0
+j = 0
+print(sums)
+# print(sums[0][0])
+# print("totalsum.txt is used below as input file ")
+input_file = open("totalsum.txt")
+output_file = open("averages.txt","w")
+for s in sums:
+    print("sums["+(s)+"]")
+    print(s)
+    f=float(s)
+    sum+=f
+    print(sum)
+
+
+# for i in range(D+1):
+#     for j in range(D):
+#         print(sums[i][j])
+
+# for line in input_file:
+#     print(line,end=" ")
+#     row = line.split(",")
+#     print(row[0])
+print()
+print(sums)
+input_file.close()
+output_file.close()
+
+totalsum.txt has changed to 
+ 1.02.03.0
+4.05.06.0
+console output
+3 3
+ 1.0 2.0 3.0
+ 4.0 5.0 6.0
+  
+D = 3
+1.0
+2.0
+3.0
+
+4.0
+5.0
+6.0
+['1.0', '2.0', '3.0\n', '4.0', '5.0', '6.0\n']
+sums[1.0]
+1.0
+1.0
+sums[2.0]
+2.0
+3.0
+sums[3.0
+]
+3.0
+6.0
+sums[4.0]
+4.0
+10.0
+sums[5.0]
+5.0
+15.0
+sums[6.0
+]
+6.0
+21.0
+['1.0', '2.0', '3.0\n', '4.0', '5.0', '6.0\n']
+>>> 
+===++end of 5:12 PM 3/18/2024+===
+===++end of 6:35 PM 3/18/2024+===
+
+-==++6:08 PM 3/18/2024++===
+grid = []
+sum1 = 0.0
+sum2 = 0.0
+D = 0
+i = 0
+j = 0
+row1 = []
+row2 = []
+input_file = open("input.txt")
+output_file = open("totalsum.txt","a")
+output_file.write(" ")
+for line in input_file:
+    print(line,end=" ")
+    row = line.split(" ")
+    grid.append(row)
+print(" ")
+D = int((grid[0][0]))
+print("\nD = " +str(D))
+for j in range(D):
+    i+=1
+    if i==1:
+        fnum = float((grid[i][j]))
+        row1.append(fnum)
+        output_file.write(grid[i][j])
+    break
+    if 1==2:
+        fnum = float((grid[i][j]))
+        row2.append(fnum)
+        output_file.write(grid[i][j])
+print("\nrow1 : ")
+print(row1)
+print("\nrow2 : ")
+print(row2)
+i = 0
+j = 0
+
+# # print(sums[0][0])
+# # print("totalsum.txt is used below as input file ")
+# input_file = open("totalsum.txt")
+# output_file = open("averages.txt","w")
+# d = D-3
+# for s in sums:
+#     if i == 0:
+#         for j in range(D):
+#             print("sums["+str(s)+"]")
+#             sum1+=s
+#             print(sum1)
+#     else:
+#          for j in range(D):
+#             print("sums["+str(s)+"]")
+#             sum2+=s
+#             print(sum2)
+
+
+# # for i in range(D+1):
+# #     for j in range(D):
+# #         print(sums[i][j])
+
+# # for line in input_file:
+# #     print(line,end=" ")
+# #     row = line.split(",")
+# #     print(row[0])
+# print()
+# print(sums)
+input_file.close()
+output_file.close()
+
+totalsum.txt has changed to
+ 1.
+
+console output
+3 3
+ 1.0 2.0 3.0
+ 4.0 5.0 6.0
+  
+D = 3
+row1 : 
+[1.0]
+row2 : 
+[]
+>>> 
+
+==++ end of 6:08 PM 3/18/2024 ++=
+
+
+===++5:56 PM 3/18/2024+===
+
+grid = []
+sum1 = 0.0
+sum2 = 0.0
+D = 0
+i = 0
+j = 0
+row1 = []
+input_file = open("input.txt")
+output_file = open("totalsum.txt","a")
+output_file.write(" ")
+for line in input_file:
+    print(line,end=" ")
+    row = line.split(" ")
+    grid.append(row)
+print(" ")
+D = int((grid[0][0]))
+print("\nD = " +str(D))
+for i in range(1,D-1):
+    for j in range(D):
+        fnum = float((grid[i][j]))
+        row1.append(fnum)
+        output_file.write(grid[i][j])
+i = 0
+j = 0
+print(row1)
+# # print(sums[0][0])
+# # print("totalsum.txt is used below as input file ")
+# input_file = open("totalsum.txt")
+# output_file = open("averages.txt","w")
+# d = D-3
+# for s in sums:
+#     if i == 0:
+#         for j in range(D):
+#             print("sums["+str(s)+"]")
+#             sum1+=s
+#             print(sum1)
+#     else:
+#          for j in range(D):
+#             print("sums["+str(s)+"]")
+#             sum2+=s
+#             print(sum2)
+
+
+# # for i in range(D+1):
+# #     for j in range(D):
+# #         print(sums[i][j])
+
+# # for line in input_file:
+# #     print(line,end=" ")
+# #     row = line.split(",")
+# #     print(row[0])
+# print()
+# print(sums)
+input_file.close()
+output_file.close()
+
+totalsum.txt
+
+  1.02.03.0
+
+console output
+3 3
+ 1.0 2.0 3.0
+ 4.0 5.0 6.0
+  
+D = 3
+[1.0, 2.0, 3.0]
+>>> 
+
+
+==++end 5:56 PM 3/18/2024+===
+
+
+==++5:22 PM 3/18/2024+++==
+
+grid = []
+sum = 0.0
+D = 0
+i = 0
+j = 0
+sums = []
+input_file = open("input.txt")
+output_file = open("totalsum.txt","a")
+output_file.write(" ")
+for line in input_file:
+    print(line,end=" ")
+    row = line.split(" ")
+    grid.append(row)
+print(" ")
+D = int((grid[0][0]))
+print("\nD = " +str(D))
+for i in range(1,D):
+    for j in range(D):
+        fnum = float((grid[i][j]))
+        sums.append(fnum)
+        print(grid[i][j])
+        print(type(grid[i][j]))
+        print(type(fnum))
+        output_file.write(grid[i][j])
+i = 0
+j = 0
+print(sums)
+# print(sums[0][0])
+# print("totalsum.txt is used below as input file ")
+input_file = open("totalsum.txt")
+output_file = open("averages.txt","w")
+for s in sums:
+    print("sums["+str(s)+"]")
+    print(s)
+    f=float(s)
+    sum+=f
+    print(sum)
+
+
+# for i in range(D+1):
+#     for j in range(D):
+#         print(sums[i][j])
+
+# for line in input_file:
+#     print(line,end=" ")
+#     row = line.split(",")
+#     print(row[0])
+print()
+print(sums)
+input_file.close()
+output_file.close()
+
+
+console output
+
+3 3
+ 1.0 2.0 3.0
+ 4.0 5.0 6.0
+  
+D = 3
+1.0
+<class 'str'>
+<class 'float'>
+2.0
+<class 'str'>
+<class 'float'>
+3.0
+<class 'str'>
+<class 'float'>
+4.0
+<class 'str'>
+<class 'float'>
+5.0
+<class 'str'>
+<class 'float'>
+3 3
+ 1.0 2.0 3.0
+ 4.0 5.0 6.0
+  
+D = 3
+1.0
+<class 'str'>
+<class 'float'>
+2.0
+<class 'str'>
+<class 'float'>
+3.0
+
+<class 'str'>
+<class 'float'>
+4.0
+<class 'str'>
+<class 'float'>
+5.0
+<class 'str'>
+<class 'float'>
+6.0
+<class 'str'>
+<class 'float'>
+[1.0, 2.0, 3.0, 4.0, 5.0, 6.0]
+sums[1.0]
+1.0
+1.0
+sums[2.0]
+2.0
+3.0
+sums[3.0]
+3.0
+6.0
+sums[4.0]
+4.0
+10.0
+sums[5.0]
+5.0
+15.0
+sums[6.0]
+6.0
+21.0
+[1.0, 2.0, 3.0, 4.0, 5.0, 6.0]
+>>> 
+
+
+==+++end 5:22 PM 3/18/2024 +===
+
+==++5:12 PM 3/18/2024++===
+grid = []
+sum = 0.0
+D = 0
+i = 0
+j = 0
+sums = []
+input_file = open("input.txt")
+output_file = open("totalsum.txt","w")
+output_file.write(" ")
+for line in input_file:
+    print(line,end=" ")
+    row = line.split(" ")
+    grid.append(row)
+print(" ")
+D = int((grid[0][0]))
+print("\nD = " +str(D))
+for i in range(1,D):
+    for j in range(D):
+        sums.append(grid[i][j])
+        print(grid[i][j])
+        output_file.write(grid[i][j])
+i = 0
+j = 0
+print(sums)
+# print(sums[0][0])
+# print("totalsum.txt is used below as input file ")
+input_file = open("totalsum.txt")
+output_file = open("averages.txt","w")
+for s in sums:
+    print("sums["+(s)+"]")
+    print(s)
+    f=float(s)
+    sum+=f
+    print(sum)
+
+
+# for i in range(D+1):
+#     for j in range(D):
+#         print(sums[i][j])
+
+# for line in input_file:
+#     print(line,end=" ")
+#     row = line.split(",")
+#     print(row[0])
+print()
+print(sums)
+input_file.close()
+output_file.close()
+
+console output
+3 3
+ 1.0 2.0 3.0
+ 4.0 5.0 6.0
+  
+D = 3
+1.0
+2.0
+3.0
+
+4.0
+5.0
+6.0
+['1.0', '2.0', '3.0\n', '4.0', '5.0', '6.0\n']
+sums[1.0]
+1.0
+1.0
+sums[2.0]
+2.0
+3.0
+sums[3.0
+]
+3.0
+6.0
+sums[4.0]
+4.0
+10.0
+sums[5.0]
+5.0
+15.0
+sums[6.0
+]
+6.0
+21.0
+['1.0', '2.0', '3.0\n', '4.0', '5.0', '6.0\n']
+>>> 
+===++end of 5:12 PM 3/18/2024+===
+
 
 grid = []
 sum = 0.0

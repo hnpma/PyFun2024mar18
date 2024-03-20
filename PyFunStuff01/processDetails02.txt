@@ -7,6 +7,287 @@ D:BKPU20FDnavyBlueYarn\TechKidTraining\1a23TechTrainng\1aaashTechTraining2024\02
 https://www.youtube.com/watch?v=evcUugVyauY
 https://github.com/joeyjames/Python
 
+==+++1:16 PM 3/20/2024++====
+
+
+userFile.txt has
+4 4 1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 9.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0
+grid = []
+sums = []
+row1 = []
+row2 = []
+row3 = []
+row4 = []
+sum = 0.0
+row1sum = 0.0
+row1ave = 0.0
+row2sum = 0.0
+row2ave = 0.0
+row3sum = 0.0
+row3ave = 0.0
+row4sum = 0.0
+row4ave = 0.0
+taverage = 0.0
+Result   = 0.0
+D ,d,i,j = 0,0,0,0.
+user_file = input("Enter your input text file that contains \n numbers separated by single space: ")
+U = "userFile.txt"
+input_file = open("userFile.txt")
+output_file = open("input.txt","w")
+for line in input_file:
+#    print(line,end=" ")
+    row = line.split(" ")
+    D = (row[0])
+    print("\nD = "+str(D))
+    print("type of D")
+    print(type(D))
+    print("\nrow : "+str(row))
+print(type(row))
+output_file.write(str(row))
+
+input_file.close()
+output_file.close()
+
+input.txt has changed to
+[['4', '4', '1.0', '2.0', '3.0', '4.0', '5.0', '6.0', '7.0', '8.0', '9.0', '10.0', '11.0', '12.0', '13.0', '14.0', '15.0', '16.0']]
+totalsums.txt has NOT  changed to
+
+averages.txt has NOT changed to
+
+console output
+
+===++ end of 1:17 PM 3/20/2024++===
+
+
+
+==++11:54 AM 3/20/2024   WORKED++===
+input.txt has
+4 4
+ 1.0 2.0 3.0 4.0
+ 5.0 6.0 7.0 8.0
+ 9.0 10.0 11.0 12.0
+ 13.0 14.0 15.0 16.0 
+
+
+grid = []
+sums = []
+row1 = []
+row2 = []
+row3 = []
+row4 = []
+sum = 0.0
+row1sum = 0.0
+row1ave = 0.0
+row2sum = 0.0
+row2ave = 0.0
+row3sum = 0.0
+row3ave = 0.0
+row4sum = 0.0
+row4ave = 0.0
+taverage = 0.0
+D ,d,i,j = 0,0,0,0.
+
+input_file = open("input.txt")
+output_file = open("totalsum.txt","w")
+output_file.write(" ")
+for line in input_file:
+    print(line,end=" ")
+    row = line.split(" ")
+    grid.append(row)
+print(" ")
+D = int((grid[0][0]))
+d = float(D)
+for i in range(1,5):
+    for j in range(D):
+        fnum=float((grid[i][j]))
+        sums.append(fnum)
+output_file.write(str(sums))
+input_file = open("totalsum.txt")
+output_file = open("averages.txt","a")
+sum = 0
+row1 = sums[0:D:1]
+row2 = sums[4:8:1]
+row3 = sums[8:12:1]
+row4 = sums[12:17:1]
+for item in row1:
+    row1sum+=item
+row1ave=row1sum/d
+
+for item in row2:
+    row2sum+=item
+row2ave=row2sum/d
+
+for item in row3:
+    row3sum+=item
+row3ave=row3sum/d
+
+for item in row4:
+    row4sum+=item
+row4ave=row4sum/d
+
+for s in sums:
+    sum+=s
+    taverage = float(sum/(d*d))
+print("\n Total average : "+str(taverage)+"\n"+
+        " Row 1 average : "+str(row1ave)+"\n"+
+        " Row 2 average : "+str(row2ave)+"\n"+
+        " Row 3 average : "+str(row3ave)+"\n"+
+        " Row 4 average : "+str(row4ave)+"\n")
+
+output_file.write("Total average : "+str(taverage)+"\n")
+output_file.write(" Row 1 average : "+str(row1ave)+"\n")
+output_file.write(" Row 2 average : "+str(row2ave)+"\n")
+output_file.write(" Row 3 average : "+str(row3ave)+"\n")
+output_file.write(" Row 4 average : "+str(row4ave)+"\n")
+input_file.close()
+output_file.close()
+
+
+===+++ end of 11:55 AM 3/20/2024   WORKED +======
+
+==++8:01 AM 3/19/2024 ++====
+input.txt has
+4 4
+ 1.0 2.0 3.0 4.0
+ 5.0 6.0 7.0 8.0
+ 9.0 10.0 11.0 12.0
+ 13.0 14.0 15.0 16.0 
+
+
+../11:37 AM 3/20/2024///
+
+
+grid = []
+sums = []
+row1 = []
+row2 = []
+row3 = []
+row4 = []
+sum = 0.0
+row1sum = 0.0
+row1ave = 0.0
+row2sum = 0.0
+row2ave = 0.0
+row3sum = 0.0
+row3ave = 0.0
+row4sum = 0.0
+row4ave = 0.0
+taverage = 0.0
+D ,d,i,j = 0,0,0,0.
+
+input_file = open("input.txt")
+output_file = open("totalsum.txt","w")
+output_file.write(" ")
+for line in input_file:
+    print(line,end=" ")
+    row = line.split(" ")
+    grid.append(row)
+print(" ")
+D = int((grid[0][0]))
+print("\nD = " +str(D))
+d = float(D)
+for i in range(1,5):
+    for j in range(D):
+        fnum=float((grid[i][j]))
+        sums.append(fnum)
+output_file.write(str(sums))
+print(sums)
+input_file = open("totalsum.txt")
+output_file = open("averages.txt","a")
+sum = 0
+row1 = sums[0:D:1]
+row2 = sums[4:8:1]
+row3 = sums[8:12:1]
+row4 = sums[12:17:1]
+print("\nrow4 : ")
+print(row4)
+
+for item in row1:
+    row1sum+=item
+row1ave=row1sum/d
+
+for item in row2:
+    row2sum+=item
+row2ave=row2sum/d
+
+for item in row3:
+    row3sum+=item
+row3ave=row3sum/d
+print("\nrow4 : ")
+print(row4)
+for item in row4:
+    row4sum+=item
+row4ave=row4sum/d
+#print("\n s: "+str(s))
+for s in sums:
+    sum+=s
+    print("\n New s: "+str(s)+" sum : "+str(sum))
+    taverage = float(sum/(d*d))
+print("\n Total average : "+str(taverage)+"\n"+
+        " Row 1 average : "+str(row1ave)+"\n"+
+        " Row 2 average : "+str(row2ave)+"\n"+
+        " Row 3 average : "+str(row3ave)+"\n"+
+        " Row 4 average : "+str(row4ave)+"\n")
+
+output_file.write("Total average : "+str(taverage)+"\n")
+output_file.write(" Row 1 average : "+str(row1ave)+"\n")
+output_file.write(" Row 2 average : "+str(row2ave)+"\n")
+output_file.write(" Row 3 average : "+str(row3ave)+"\n")
+output_file.write(" Row 4 average : "+str(row4ave)+"\n")
+input_file.close()
+output_file.close()
+
+
+
+averages.txt has changed to
+Total average : 8.5
+ Row 1 average : 2.5
+ Row 2 average : 6.5
+ Row 3 average : 10.5
+ Row 4 average : 14.5
+
+totalsum.txt has changed to
+ [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0]
+
+console output
+
+4 4
+ 1.0 2.0 3.0 4.0
+ 5.0 6.0 7.0 8.0
+ 9.0 10.0 11.0 12.0
+ 13.0 14.0 15.0 16.0  
+D = 4
+[1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 1
+3.0, 14.0, 15.0, 16.0]
+row4 : 
+[13.0, 14.0, 15.0, 16.0]
+row4 : 
+[13.0, 14.0, 15.0, 16.0]
+ New s: 1.0 sum : 1.0
+ New s: 2.0 sum : 3.0
+ New s: 3.0 sum : 6.0
+ New s: 4.0 sum : 10.0
+ New s: 5.0 sum : 15.0
+ New s: 6.0 sum : 21.0
+ New s: 7.0 sum : 28.0
+ New s: 8.0 sum : 36.0
+ New s: 9.0 sum : 45.0
+ New s: 10.0 sum : 55.0
+ New s: 11.0 sum : 66.0
+ New s: 12.0 sum : 78.0
+ New s: 13.0 sum : 91.0
+ New s: 14.0 sum : 105.0
+ New s: 15.0 sum : 120.0
+ New s: 16.0 sum : 136.0
+ Total average : 8.5
+ Row 1 average : 2.5
+ Row 2 average : 6.5
+ Row 3 average : 10.5
+ Row 4 average : 14.5
+>>> 
+
+
+../end 11:37 AM 3/20/2024///
 
 
 

@@ -3,6 +3,84 @@ PyFUnStuff01ab
 
 1:00 PM 3/18/2024
 
+
+==++= ???!!! 1:10 PM 3/20/2024++==
+type of D :
+class<NoneType> 
+..................1:12 PM 3/20/2024.../.................
+
+===++end of   ???!!!  1:10 PM 3/20/2024++===
+
+
+
+==++1:12 PM 3/20/2024+++=
+userFile.txt has
+4 4 1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 9.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0
+
+
+
+grid = []
+sums = []
+row1 = []
+row2 = []
+row3 = []
+row4 = []
+sum = 0.0
+row1sum = 0.0
+row1ave = 0.0
+row2sum = 0.0
+row2ave = 0.0
+row3sum = 0.0
+row3ave = 0.0
+row4sum = 0.0
+row4ave = 0.0
+taverage = 0.0
+Result   = 0.0
+D ,d,i,j = 0,0,0,0.
+user_file = input("Enter your input text file that contains \n numbers separated by single space: ")
+U = "userFile.txt"
+input_file = open("userFile.txt")
+output_file = open("input.txt","w")
+for line in input_file:
+#    print(line,end=" ")
+    row = line.split(" ")
+    D = print(row[0])
+    print("\nD = "+str(D))
+    print("type of D")
+    print(type(D))
+    print("\nrow : "+str(row))
+print(type(row))
+output_file.write(str(row))
+
+input_file.close()
+output_file.close()
+
+input.txt has changed to 
+['4', '4', '1.0', '2.0', '3.0', '4.0', '5.0', '6.0', '7.0', '8.0', '9.0', '10.0', '11.0', '12.0', '13.0', '14.0', '15.0', '16.0']
+
+
+totalsums.txt has NOT  changed to
+
+averages.txt has NOT changed to
+
+
+console outptut
+Enter your input text file that contains 
+ numbers separated by single space: userFile.txt
+4
+D = None
+type of D
+<class 'NoneType'>
+row : ['4', '4', '1.0', '2.0', '3.0', '4.0', '5.0', '6.0', '7.0',
+ '8.0', '9.0', '10.0', '11.0', '12.0', '13.0', '14.0', '15.0', '1
+6.0']
+<class 'list'>
+>>> 
+===+++end of 1:12 PM 3/20/2024+====
+
+
+
+
 ==++1:04 PM 3/18/2024+++==
 
 

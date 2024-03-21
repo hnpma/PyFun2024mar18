@@ -4,7 +4,242 @@ C:\Users\User\Documents\PyFun2024mar18
 
 1:18 PM 3/20/2024
 
+==++ 7:16 PM 3/20/2024 worked +=====
 
+input.txt contains
+4 4
+1.0 2.0 3.0 4.0
+5.0 6.0 7.0 8.0
+9.0 10.0 11.0 12.0
+13.0 14.0 15.0 16.0
+
+grid = []
+sums = []
+row1 = []
+row2 = []
+row3 = []
+row4 = []
+sum = 0.0
+row1sum = 0.0
+row1ave = 0.0
+row2sum = 0.0
+row2ave = 0.0
+row3sum = 0.0
+row3ave = 0.0
+row4sum = 0.0
+row4ave = 0.0
+taverage = 0.0
+D ,d,i,j = 0,0,0,0.
+
+input_file = open("input.txt")
+output_file = open("totalsum.txt","w")
+output_file.write(" ")
+for line in input_file:
+    print(line,end=" ")
+    row = line.split(" ")
+    grid.append(row)
+print(" ")
+D = int((grid[0][0]))
+d = float(D)
+for i in range(1,5):
+    for j in range(D):
+        fnum=float((grid[i][j]))
+        sums.append(fnum)
+output_file.write(str(sums))
+input_file = open("totalsum.txt")
+output_file = open("averages.txt","a")
+sum = 0
+row1 = sums[0:D:1]
+row2 = sums[4:8:1]
+row3 = sums[8:12:1]
+row4 = sums[12:17:1]
+for item in row1:
+    row1sum+=item
+row1ave=row1sum/d
+
+for item in row2:
+    row2sum+=item
+row2ave=row2sum/d
+
+for item in row3:
+    row3sum+=item
+row3ave=row3sum/d
+
+for item in row4:
+    row4sum+=item
+row4ave=row4sum/d
+
+for s in sums:
+    sum+=s
+    taverage = float(sum/(d*d))
+output_file.write(" Total average : "+str(taverage)+"\n")
+output_file.write(" Row 1 average : "+str(row1ave)+"\n")
+output_file.write(" Row 2 average : "+str(row2ave)+"\n")
+output_file.write(" Row 3 average : "+str(row3ave)+"\n")
+output_file.write(" Row 4 average : "+str(row4ave)+"\n")
+input_file = open("input.txt")
+output_file = open("reverse.txt","a")
+
+(row1.reverse())
+(row2.reverse())
+(row3.reverse())
+(row4.reverse())
+output_file.write(str(row1)+"\n")
+output_file.write(str(row2)+"\n")
+output_file.write(str(row3)+"\n")
+output_file.write(str(row4)+"\n")
+
+input_file.close()
+output_file.close()
+
+totalsum.txt has changed to
+ [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0]
+
+averages.txt has changed to
+ Total average : 8.5
+ Row 1 average : 2.5
+ Row 2 average : 6.5
+ Row 3 average : 10.5
+ Row 4 average : 14.5
+
+reverse.txt
+[4.0, 3.0, 2.0, 1.0]
+[8.0, 7.0, 6.0, 5.0]
+[12.0, 11.0, 10.0, 9.0]
+[16.0, 15.0, 14.0, 13.0]
+
+flipped.txt has changed to
+
+[13.0, 14.0, 15.0, 16.0]
+[9.0, 10.0, 11.0, 12.0]
+[5.0, 6.0, 7.0, 8.0]
+[1.0, 2.0, 3.0, 4.0]
+
+console output
+4 4
+ 1.0 2.0 3.0 4.0
+ 5.0 6.0 7.0 8.0
+ 9.0 10.0 11.0 12.0
+ 13.0 14.0 15.0 16.0  
+>>> 
+
+===++ end of 7:16 PM 3/20/2024+ worked====
+
+
+
+==++ 7:06 PM 3/20/2024+====
+
+input.txt contains
+4 4
+1.0 2.0 3.0 4.0
+5.0 6.0 7.0 8.0
+9.0 10.0 11.0 12.0
+13.0 14.0 15.0 16.0
+
+grid = []
+sums = []
+row1 = []
+row2 = []
+row3 = []
+row4 = []
+sum = 0.0
+row1sum = 0.0
+row1ave = 0.0
+row2sum = 0.0
+row2ave = 0.0
+row3sum = 0.0
+row3ave = 0.0
+row4sum = 0.0
+row4ave = 0.0
+taverage = 0.0
+D ,d,i,j = 0,0,0,0.
+
+input_file = open("input.txt")
+output_file = open("totalsum.txt","w")
+output_file.write(" ")
+for line in input_file:
+    print(line,end=" ")
+    row = line.split(" ")
+    grid.append(row)
+print(" ")
+D = int((grid[0][0]))
+d = float(D)
+for i in range(1,5):
+    for j in range(D):
+        fnum=float((grid[i][j]))
+        sums.append(fnum)
+output_file.write(str(sums))
+input_file = open("totalsum.txt")
+output_file = open("averages.txt","a")
+sum = 0
+row1 = sums[0:D:1]
+row2 = sums[4:8:1]
+row3 = sums[8:12:1]
+row4 = sums[12:17:1]
+for item in row1:
+    row1sum+=item
+row1ave=row1sum/d
+
+for item in row2:
+    row2sum+=item
+row2ave=row2sum/d
+
+for item in row3:
+    row3sum+=item
+row3ave=row3sum/d
+
+for item in row4:
+    row4sum+=item
+row4ave=row4sum/d
+
+for s in sums:
+    sum+=s
+    taverage = float(sum/(d*d))
+output_file.write(" Total average : "+str(taverage)+"\n")
+output_file.write(" Row 1 average : "+str(row1ave)+"\n")
+output_file.write(" Row 2 average : "+str(row2ave)+"\n")
+output_file.write(" Row 3 average : "+str(row3ave)+"\n")
+output_file.write(" Row 4 average : "+str(row4ave)+"\n")
+input_file = open("input.txt")
+output_file = open("reverse.txt","a")
+
+(row1.reverse())
+(row2.reverse())
+(row3.reverse())
+(row4.reverse())
+output_file.write(str(row1)+"\n")
+output_file.write(str(row2)+"\n")
+output_file.write(str(row3)+"\n")
+output_file.write(str(row4)+"\n")
+
+input_file.close()
+output_file.close()
+
+totalsum.txt has changed to
+ [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0]
+
+averages.txt has changed to
+ Total average : 8.5
+ Row 1 average : 2.5
+ Row 2 average : 6.5
+ Row 3 average : 10.5
+ Row 4 average : 14.5
+
+reverse.txt
+[4.0, 3.0, 2.0, 1.0]
+[8.0, 7.0, 6.0, 5.0]
+[12.0, 11.0, 10.0, 9.0]
+[16.0, 15.0, 14.0, 13.0]
+
+console output
+4 4
+ 1.0 2.0 3.0 4.0
+ 5.0 6.0 7.0 8.0
+ 9.0 10.0 11.0 12.0
+ 13.0 14.0 15.0 16.0  
+>>> 
+
+===+++ end of 7:06 PM 3/20/2024 ++==
 
 ===++ 1:18 PM 3/20/2024 ++++++++++====
 user_file.txt used as input_file has
